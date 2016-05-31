@@ -1,8 +1,13 @@
 # Tabbar
+
 > 底部选项卡，点击 tab 会切换显示的页面。依赖 tab-item 组件。
+
 -------------
 
 ## 例子
+
+与 <a v-link="{path:'/panel'}">panel</a> 搭配使用
+
 
 ```html
 <mt-tabbar :selected.sync="selected">
@@ -25,14 +30,12 @@
 </mt-tabbar>
 ```
 
-与 <a v-link="{path:'/panel'}">panel</a> 搭配使用
-
 ## API
 
 ### tabbar
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 |------|-------|---------|-------|--------|
-| fixed | 固定在页面顶部 | boolean | | false |
+| fixed | 固定在页面底部 | boolean | | false |
 | selected | 返回当前选中的 tab-item 的 id | * | |  |
 
 

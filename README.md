@@ -1,5 +1,5 @@
 # docs
-documentation for mint-ui.
+> documentation for mint-ui.
 
 ## Development
 ```shell
@@ -10,3 +10,6 @@ make dev
 ```shell
 make deploy
 ```
+
+## License
+MIT

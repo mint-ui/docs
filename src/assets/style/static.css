@@ -3,21 +3,19 @@ html, body {
   overflow-x: hidden;
 }
 
-h1 {
+h1, h2, h3 {
   color: #444;
+  font-size: 1.2em;
+  margin: 1.5em 0 1.2em;
+}
+
+h1 {
   font-size: 2em;
-  margin: 1em 0 1.2em;
 }
 
 hr {
   border: 0;
   border-bottom: 1px solid #f0f0f0;
-}
-
-h2, h3 {
-  color: #444;
-  font-size: 1.2em;
-  margin: 3em 0 1.2em;
 }
 
 .hljs {

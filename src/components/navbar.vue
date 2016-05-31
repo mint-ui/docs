@@ -45,7 +45,7 @@
     font-size: 14px;
     height: 100%;
     padding-left: 20px;
-    padding-top: 30px;
+    padding-top: 42px;
   }
 
   .nav-label {
