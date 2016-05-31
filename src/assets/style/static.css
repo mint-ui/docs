@@ -1,0 +1,43 @@
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  color: #444;
+  font-size: 2em;
+  margin: 1em 0 1.2em;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+h2, h3 {
+  color: #444;
+  font-size: 1.2em;
+  margin: 3em 0 1.2em;
+}
+
+.hljs {
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+p > code {
+  background-color: #eee;
+}
+
+pre {
+  margin: 1.2em 0;
+}
+
+blockquote {
+  margin-bottom: 20px;
+}
+
+a {
+  color: #4078c0;
+  text-decoration: none;
+}

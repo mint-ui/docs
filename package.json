@@ -1,0 +1,33 @@
+{
+  "name": "docs",
+  "version": "0.0.0",
+  "description": "documentation for mint-ui.",
+  "private": false,
+  "keywords": [],
+  "scripts": {
+    "dev": "cooking watch",
+    "dist": "cooking build -p",
+    "deploy": "npm run dist && gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mint-ui/docs/docs.git"
+  },
+  "homepage": "https://github.com/mint-ui/docs/docs#readme",
+  "bugs": {
+    "url": "https://github.com/mint-ui/docs/docs/issues"
+  },
+  "author": "elemefe",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "*",
+    "vue-router": "^0.7.13"
+  },
+  "devDependencies": {
+    "gh-pages": "^0.11.0",
+    "highlight.js": "^9.4.0",
+    "markdown-it-highlightjs": "^2.0.0",
+    "markdown-it-plus-loader": "^0.3.2",
+    "sushi-ui": "^0.8.2"
+  }
+}

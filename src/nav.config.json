@@ -1,0 +1,39 @@
+[
+  {
+    "title": "UI 组件",
+    "list": [
+      {
+        "path": "/header",
+        "name": "Header"
+      },
+      {
+        "path": "/tabbar",
+        "name": "Tabbar"
+      },
+      {
+        "path": "/navbar",
+        "name": "Navbar"
+      },
+      {
+        "path": "/button",
+        "name": "Button"
+      },
+      {
+        "path": "/cell",
+        "name": "Cell"
+      },
+      {
+        "path": "/spinner",
+        "name": "Spinner"
+      },
+      {
+        "path": "/panel",
+        "name": "Panel"
+      },
+      {
+        "path": "/search",
+        "name": "Search"
+      }
+    ]
+  }
+]
