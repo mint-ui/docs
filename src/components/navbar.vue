@@ -4,7 +4,7 @@
       <li>
         <a
           class="nav-link"
-          v-link="'/'">首页</a>
+          v-link="'/'">Overview</a>
       </li>
 
       <template v-for="group in navs">

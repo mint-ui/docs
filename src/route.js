@@ -29,6 +29,6 @@ export default Object.assign({
     component: Vue.component('page-readme', {
       template: require('./pages/README.md').body
     }),
-    title: '首页'
+    title: '概述'
   }
 }, route.route);
