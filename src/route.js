@@ -6,7 +6,7 @@ const registerRoute = (config) => {
   config.map(nav => nav.list.map(page => {
     try {
       route[page.path] = {
-        component: Vue.component(`page-${page.name}`, {
+        component: Vue.component(`page-${page.name.replace(/\s/, '-').toLowerCase()}`, {
           template: require(`./pages${page.path}.md`).body
         }),
         title: page.title || page.name,

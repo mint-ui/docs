@@ -25,6 +25,8 @@ hr {
 
 p > code {
   background-color: #eee;
+  padding: 2px;
+  color: #26a2ff;
 }
 
 pre {
@@ -38,4 +40,8 @@ blockquote {
 a {
   color: #4078c0;
   text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  /*width: 0;*/
 }

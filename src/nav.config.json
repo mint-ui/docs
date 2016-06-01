@@ -1,6 +1,63 @@
 [
   {
-    "title": "UI 组件",
+    "title": "JS Components",
+    "list": [
+      {
+        "path": "/toast",
+        "name": "Toast"
+      },
+      {
+        "path": "/indicator",
+        "name": "Indicator"
+      },
+      {
+        "path": "/pull-down",
+        "name": "Pull down"
+      },
+      {
+        "path": "/pull-up",
+        "name": "Pull up"
+      },
+      {
+        "path": "/infinite-scroll",
+        "name": "Infinite scroll"
+      },
+      {
+        "path": "/message-box",
+        "name": "Message box"
+      },
+      {
+        "path": "/action-sheet",
+        "name": "Action sheet"
+      },
+      {
+        "path": "/popup",
+        "name": "Popup"
+      },
+      {
+        "path": "/swipe",
+        "name": "Swipe"
+      },
+      {
+        "path": "/lazyload",
+        "name": "Lazy load"
+      },
+      {
+        "path": "/range",
+        "name": "Range"
+      },
+      {
+        "path": "/progress",
+        "name": "Progress"
+      },
+      {
+        "path": "/picker",
+        "name": "Picker"
+      }
+    ]
+  },
+  {
+    "title": "CSS Components",
     "list": [
       {
         "path": "/header",
@@ -27,12 +84,37 @@
         "name": "Spinner"
       },
       {
-        "path": "/panel",
-        "name": "Panel"
+        "path": "/tab-container",
+        "name": "TabContainer"
       },
       {
         "path": "/search",
         "name": "Search"
+      }
+    ]
+  },
+  {
+    "title": "Form Components",
+    "list": [
+      {
+        "path": "/switch",
+        "name": "Switch"
+      },
+      {
+        "path": "/checklist",
+        "name": "Checklist"
+      },
+      {
+        "path": "/radio",
+        "name": "Radio"
+      },
+      {
+        "path": "/field",
+        "name": "Field"
+      },
+      {
+        "path": "/badge",
+        "name": "Badge"
       }
     ]
   }

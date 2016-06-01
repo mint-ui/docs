@@ -9,18 +9,24 @@
 
       <template v-for="group in navs">
         <li>
-          <label
+          <a
+            href="#"
+            @click.prevent="group.visible = !group.visible"
             class="nav-label"
             v-text="group.title">
-          </label>
-        </li>
-        <li v-for="item in group.list">
-          <a
-            class="nav-link"
-            v-link="{ path: item.path, activeClass: 'is-active' }"
-            v-text="item.name">
           </a>
         </li>
+        <ul v-show="group.visible" transition="slidedown" :style="{
+            maxHeight: group.list.length * 36 + 'px'
+          }">
+          <li v-for="item in group.list">
+            <a
+              class="nav-link"
+              v-link="{ path: item.path, activeClass: 'is-active' }"
+              v-text="item.name">
+            </a>
+          </li>
+        </ul>
       </template>
     </ul>
   </nav>
@@ -28,6 +34,10 @@
 
 <script>
   import { navs } from '../route';
+  navs.map(item => {
+    item.visible = true;
+    return item;
+  });
 
   export default {
     data() {
@@ -39,13 +49,24 @@
 </script>
 
 <style lang="css" scoped>
+  .slidedown-transition {
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+    opacity: 1;
+  }
+
+  .slidedown-enter,
+  .slidedown-leave {
+    max-height: 0 !important;
+    opacity: 0.3;
+  }
+
   .nav {
     background-color: #f9fafb;
     color: #4c555a;
     font-size: 14px;
-    height: 100%;
-    padding-left: 20px;
-    padding-top: 42px;
+    min-height: 100%;
+    padding: 42px 0 42px 20px;
   }
 
   .nav-label {
@@ -60,6 +81,7 @@
     display: block;
     text-decoration: none;
     color: inherit;
+    transition: color .2s;
 
     &.is-active {
       color: #4078c0;
