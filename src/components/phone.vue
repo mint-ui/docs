@@ -2,7 +2,7 @@
   <div class="phone">
     <iframe
       class="demo-page"
-      :src="'//mint-ui.github.io/mint-ui/#!' + (routePath === '/loadmore' ? '/pull-down' : routePath)"
+      :src="'//mint-ui.github.io/mint-ui/#!' + (routePath === '/loadmore' ? '/pull-down' : (routePath === '/repositories' ? '' : routePath))"
       frameborder="0">
     </iframe>
   </div>

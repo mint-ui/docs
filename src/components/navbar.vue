@@ -5,6 +5,9 @@
         <a
           class="nav-link"
           v-link="'/' + ($route.language || $route.default_lang.value)">Overview</a>
+        <a
+          class="nav-link"
+          v-link="'/' + ($route.language || $route.default_lang.value) + '/repositories'">Repositories</a>
       </li>
 
       <template v-for="group in navs">

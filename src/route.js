@@ -34,6 +34,13 @@ LANG_CONFIG.langs.forEach(lang => {
       template: require(`./pages/${lang.value}/README.md`).body
     })
   };
+  route[`/${lang.value}/repositories`] = {
+    title: '子项目',
+    language: lang.value,
+    component: Vue.component(`${lang.value}-readme`, {
+      template: require(`./pages/${lang.value}/repositories.md`).body
+    })
+  };
   Object.assign(route, registerRoute(NavConfig, lang.value));
 });
 
