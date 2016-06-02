@@ -1,34 +1,50 @@
 import NavConfig from './nav.config.json';
 import Vue from 'vue';
+import LANG_CONFIG from './langs.json';
 
-const registerRoute = (config) => {
+const registerRoute = (config, lang) => {
   let route = {};
+
   config.map(nav => nav.list.map(page => {
+    const componentName = `${lang}-${page.name.replace(/\s/, '-').toLowerCase()}`;
+
     try {
-      route[page.path] = {
-        component: Vue.component(`page-${page.name.replace(/\s/, '-').toLowerCase()}`, {
-          template: require(`./pages${page.path}.md`).body
-        }),
+      route[`/${lang}${page.path}`] = {
         title: page.title || page.name,
-        description: page.description
+        language: lang,
+        component: Vue.component(componentName, {
+          template: require(`./pages/${lang}${page.path}.md`).body
+        })
       };
     } catch (e) {
       console.error(e);
-      page.disabled = true;
     }
   }));
 
-  return { route, navs: config };
+  return route;
 };
 
-const route = registerRoute(NavConfig);
+let route = {};
 
-export const navs = route.navs;
+LANG_CONFIG.langs.forEach(lang => {
+  route[`/${lang.value}`] = {
+    title: '概述',
+    language: lang.value,
+    component: Vue.component(`${lang.value}-readme`, {
+      template: require(`./pages/${lang.value}/README.md`).body
+    })
+  };
+  Object.assign(route, registerRoute(NavConfig, lang.value));
+});
+
+export const navs = NavConfig;
 export default Object.assign({
   '/': {
     component: Vue.component('page-readme', {
       template: require('./pages/README.md').body
     }),
-    title: '概述'
+    default_lang: LANG_CONFIG.langs.find(item => item.value === LANG_CONFIG.default),
+    langs: LANG_CONFIG.langs,
+    title: '选择语言'
   }
-}, route.route);
+}, route);

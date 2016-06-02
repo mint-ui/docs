@@ -2,7 +2,7 @@
   <div class="phone">
     <iframe
       class="demo-page"
-      :src="'//mint-ui.github.io/mint-ui/#!' + $route.path"
+      :src="'//mint-ui.github.io/mint-ui/#!' + routePath"
       frameborder="0">
     </iframe>
   </div>
@@ -10,7 +10,13 @@
 
 <script>
 export default {
-  name: 'phone'
+  name: 'phone',
+
+  computed: {
+    routePath() {
+      return this.$route.path.replace(/^\/(zh-cn|en)/, '');
+    }
+  }
 };
 </script>
 

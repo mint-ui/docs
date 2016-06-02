@@ -34,5 +34,5 @@
 | size | 尺寸 | String | normal, large, small | normal |
 ## Slot
 | name | 描述 |
-|--|--|
+|------|--------|
 | - | 显示内容 |
