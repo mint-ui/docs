@@ -3,7 +3,7 @@
     <section class="col-2 is-scrollable navbar">
       <navbar></navbar>
     </section>
-    <section class="col-6 is-scrollable content">
+    <section class="col-6 is-scrollable content" v-el:main>
       <router-view></router-view>
     </section>
     <section class="col-4 demo">
@@ -17,6 +17,12 @@
   import Phone from './components/phone';
 
   export default {
+    watch: {
+      '$route.path'() {
+        this.$els.main.scrollTop = 0;
+      }
+    },
+
     components: {
       Navbar,
       Phone
