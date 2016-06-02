@@ -8,7 +8,8 @@ cooking.set({
   template: './src/index.tpl',
 
   devServer: {
-    port: 8075
+    port: 8075,
+    publicPath: '/'
   },
 
   // production

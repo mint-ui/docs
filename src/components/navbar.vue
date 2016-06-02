@@ -4,7 +4,7 @@
       <li>
         <a
           class="nav-link"
-          v-link="'/'">Overview</a>
+          v-link="'/' + ($route.language || $route.default_lang.value)">Overview</a>
       </li>
 
       <template v-for="group in navs">
@@ -22,7 +22,10 @@
           <li v-for="item in group.list">
             <a
               class="nav-link"
-              v-link="{ path: item.path, activeClass: 'is-active' }"
+              v-link="{
+                path: '/' + ($route.language || $route.default_lang.value) + item.path,
+                activeClass: 'is-active'
+              }"
               v-text="item.name">
             </a>
           </li>
@@ -34,6 +37,7 @@
 
 <script>
   import { navs } from '../route';
+
   navs.map(item => {
     item.visible = true;
     return item;
