@@ -2,7 +2,7 @@
   <div class="phone">
     <iframe
       class="demo-page"
-      :src="'//mint-ui.github.io/mint-ui/#!' + $route.path"
+      :src="'//mint-ui.github.io/mint-ui/#!' + ($route.path === '/loadmore' ? '/pull-down' : $route.path)"
       frameborder="0">
     </iframe>
   </div>

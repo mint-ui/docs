@@ -11,12 +11,8 @@
         "name": "Indicator"
       },
       {
-        "path": "/pull-down",
-        "name": "Pull down"
-      },
-      {
-        "path": "/pull-up",
-        "name": "Pull up"
+        "path": "/loadmore",
+        "name": "Loadmore"
       },
       {
         "path": "/infinite-scroll",
