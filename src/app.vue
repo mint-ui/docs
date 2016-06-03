@@ -2,16 +2,18 @@
   <main
     class="row main"
     :class="{'slide-in-left': navbarShow}">
-    <button class="navbar-toggle" @click="navbarShow = !navbarShow">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
     <section
       class="col-2 is-scrollable navbar">
       <navbar></navbar>
     </section>
-    <section class="col-6 is-scrollable content" v-el:main>
+    <section class="col-6 is-scrollable content" v-el:main @click="navbarShow = false">
+      <div class="navbar-toggle-container">
+        <button class="navbar-toggle" @click="toggleNavbar">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
       <router-view></router-view>
     </section>
     <section class="col-4 demo">
@@ -20,7 +22,7 @@
   </main>
 </template>
 
-<script>
+<script type="text/babel">
   import Navbar from './components/navbar';
   import Phone from './components/phone';
 
@@ -28,6 +30,9 @@
     watch: {
       '$route.path'() {
         this.$els.main.scrollTop = 0;
+        setTimeout(() => {
+          this.navbarShow = false;
+        }, 200);
       }
     },
 
@@ -40,6 +45,13 @@
     components: {
       Navbar,
       Phone
+    },
+
+    methods: {
+      toggleNavbar(event) {
+        event.stopPropagation();
+        this.navbarShow = !this.navbarShow;
+      }
     }
   };
 </script>
@@ -63,32 +75,19 @@
 
   .navbar {
     min-width: 140px;
+    padding-left: 0;
   }
 
-  .navbar-toggle {
-    background-color: #fff;
-    border-radius: 4px;
-    border: 1px dashed #ccc;
+  .navbar-toggle-container {
     display: none;
-    height: 45px;
-    margin: 10px;
-    outline: none;
-    width: 45px;
-    position: fixed;
-    z-index: 10;
-
-    span {
-      display: block;
-      width: 100%;
-      height: 2px;
-      margin: 4px auto;
-      background-color: #444;
-    }
   }
 
   @media screen and (max-width: 768px) {
     .main {
       min-width: 0;
+      box-sizing: border-box;
+      width: 100%;
+      margin: 0;
     }
 
     .demo {
@@ -97,6 +96,7 @@
 
     .content {
       width: 100%;
+      padding: 45px 0 0;
     }
 
     .navbar {
@@ -110,6 +110,7 @@
       width: 60%;
       z-index: 10;
       min-width: auto;
+      padding: 0;
     }
 
     .slide-in-left {
@@ -120,8 +121,34 @@
       }
     }
 
+    .navbar-toggle-container {
+      box-sizing: border-box;
+      display: block;
+      position: fixed;
+      padding-left: 10px;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #26a2ff;
+    }
+
     .navbar-toggle {
       display: block;
+      background-color: #26a2ff;
+      border-radius: 4px;
+      border: 1px solid #fff;
+      height: 35px;
+      margin: 10px 0;
+      outline: none;
+      width: 35px;
+      z-index: 10;
+      span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        margin: 4px auto;
+        background-color: #fff;
+      }
     }
   }
 </style>

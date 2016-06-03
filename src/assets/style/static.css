@@ -59,3 +59,20 @@ table th:nth-child(5) {
 table th:nth-child(4) {
   width: 110px;
 }
+
+@media screen and (max-width: 768px) {
+  .table-container {
+    overflow-x: scroll;
+  }
+
+  .table {
+    width: auto;
+    min-width: 100%;
+    table-layout: auto;
+  }
+
+  .table-container .table th {
+    width: auto;
+    min-width: 100px;
+  }
+}

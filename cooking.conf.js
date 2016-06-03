@@ -44,8 +44,11 @@ cooking.add('markdown-it', {
   html: true,
   preprocess: function (MarkdownIt, Environment, Source) {
     MarkdownIt.renderer.rules.table_open = function () {
-      return '<table class="table">';
-    }
+      return '<div class="table-container"><table class="table">';
+    };
+    MarkdownIt.renderer.rules.table_close = function () {
+      return '</table></div>';
+    };
     return Source;
   }
 });

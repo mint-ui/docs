@@ -44,13 +44,20 @@ LANG_CONFIG.langs.forEach(lang => {
   Object.assign(route, registerRoute(NavConfig, lang.value));
 });
 
+let defaultLang = {};
+LANG_CONFIG.langs.forEach(item => {
+  if (item.value === LANG_CONFIG.default) {
+    defaultLang = item;
+  }
+});
+
 export const navs = NavConfig;
 export default Object.assign({
   '/': {
     component: Vue.component('page-readme', {
       template: require('./pages/README.md').body
     }),
-    default_lang: LANG_CONFIG.langs.find(item => item.value === LANG_CONFIG.default),
+    default_lang: defaultLang,
     langs: LANG_CONFIG.langs,
     title: '选择语言'
   }
