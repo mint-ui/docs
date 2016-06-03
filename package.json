@@ -28,6 +28,7 @@
     "highlight.js": "^9.4.0",
     "markdown-it-highlightjs": "^2.0.0",
     "markdown-it-plus-loader": "^0.3.2",
+    "my-local-ip": "^1.0.0",
     "sushi-ui": "^0.8.2"
   }
 }
