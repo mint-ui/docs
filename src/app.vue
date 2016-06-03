@@ -88,6 +88,7 @@
       box-sizing: border-box;
       width: 100%;
       margin: 0;
+      padding: 0;
     }
 
     .demo {
@@ -96,7 +97,7 @@
 
     .content {
       width: 100%;
-      padding: 45px 0 0;
+      padding: 45px 10px 0;
     }
 
     .navbar {
@@ -130,6 +131,7 @@
       left: 0;
       width: 100%;
       background-color: #26a2ff;
+      z-index: 10;
     }
 
     .navbar-toggle {
@@ -139,6 +141,7 @@
       border: 1px solid #fff;
       height: 35px;
       margin: 10px 0;
+      padding: 2px 6px;
       outline: none;
       width: 35px;
       z-index: 10;
