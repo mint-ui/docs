@@ -1,6 +1,5 @@
 var path = require('path');
 var cooking = require('cooking');
-var hljs = require('highlight.js');
 
 cooking.set({
   entry: './src/main.js',
@@ -34,15 +33,11 @@ cooking.add('externals', {
 
 cooking.add('loader.md', {
   test: /\.md$/,
-  loaders: ['markdown-it-plus-loader']
+  loader: 'vue-markdown-loader'
 });
 
-cooking.add('markdown-it', {
-  use: [
-    require('markdown-it-highlightjs')
-  ],
-  html: true,
-  preprocess: function (MarkdownIt, Environment, Source) {
+cooking.add('vueMarkdown', {
+  preprocess: function (MarkdownIt, Source) {
     MarkdownIt.renderer.rules.table_open = function () {
       return '<div class="table-container"><table class="table">';
     };
