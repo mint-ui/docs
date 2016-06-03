@@ -4,10 +4,10 @@
       <li>
         <a
           class="nav-link"
-          v-link="'/' + ($route.language || $route.default_lang.value)">Overview</a>
+          v-link="{ path: '/' + ($route.language || $route.default_lang.value), activeClass: 'is-active', exact: true }">Overview</a>
         <a
           class="nav-link"
-          v-link="'/' + ($route.language || $route.default_lang.value) + '/repositories'">Repositories</a>
+          v-link="{ path: '/' + ($route.language || $route.default_lang.value) + '/repositories', activeClass: 'is-active', exact: true }">Repositories</a>
       </li>
 
       <template v-for="group in navs">
