@@ -26,16 +26,14 @@ hr {
 pre {
   background-color: #f8f8f8;
   padding: 20px;
+  margin: 1.2em 0;
+  overflow: auto;
 }
 
 p > code {
   background-color: #eee;
   padding: 2px;
   color: #26a2ff;
-}
-
-pre {
-  margin: 1.2em 0;
 }
 
 blockquote {
