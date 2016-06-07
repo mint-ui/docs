@@ -4,6 +4,15 @@
 
 -------------
 
+## 引入
+
+```javascript
+import { Swipe, SwipeItem } from 'mint-ui';
+
+Vue.component(Swipe.name, Swipe);
+Vue.component(SwipeItem.name, SwipeItem);
+```
+
 ## 例子
 
 基础用法

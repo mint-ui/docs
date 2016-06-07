@@ -5,7 +5,7 @@
 -------------
 ## 引入
 
-```html
+```javascript
 import { Toast } from 'mint-ui';
 ```
 
@@ -13,13 +13,13 @@ import { Toast } from 'mint-ui';
 
 基本用法
 
-```html
+```javascript
 Toast('提示信息');
 ```
 
 在调用 `Toast` 时传入一个对象即可配置更多选项
 
-```html
+```javascript
 Toast({
   message: '提示',
   position: 'bottom',
@@ -29,7 +29,7 @@ Toast({
 
 若需在文字上方显示一个 icon 图标，可以将图标的类名作为 `iconClass` 的值传给 `Toast`（图标需自行准备）
 
-```html
+```javascript
 Toast({
   message: '操作成功',
   iconClass: 'icon icon-success'

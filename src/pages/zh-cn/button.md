@@ -4,6 +4,14 @@
 
 ------------
 
+## 引入
+
+```javascript
+import { Button } from 'mint-ui';
+
+Vue.component(Button.name, Button);
+```
+
 ## 例子
 改变颜色
 

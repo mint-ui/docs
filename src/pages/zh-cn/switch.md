@@ -4,6 +4,14 @@
 
 ----------
 
+## 引入
+
+```javascript
+import { Switch } from 'mint-ui';
+
+Vue.component(Switch.name, Switch);
+```
+
 ## 例子
 
 ```html

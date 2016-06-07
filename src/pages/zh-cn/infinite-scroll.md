@@ -4,6 +4,14 @@
 
 -------------
 
+## 引入
+
+```javascript
+import { InfiniteScroll } from 'mint-ui';
+
+Vue.directive(InfiniteScroll.name, InfiniteScroll);
+```
+
 ## 例子
 
 为 HTML 元素添加 `v-infinite-scroll` 指令即可使用无限滚动。滚动该元素，当其底部与被滚动元素底部的距离小于给定的阈值（通过 `infinite-scroll-distance` 设置）时，绑定到 `v-infinite-scroll` 指令的方法就会被触发。

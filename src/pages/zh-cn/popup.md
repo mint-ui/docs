@@ -4,6 +4,14 @@
 
 -------------
 
+## 引入
+
+```javascript
+import { Popup } from 'mint-ui';
+
+Vue.component(Popup.name, Popup);
+```
+
 ## 例子
 
 `position` 属性指定了 `popup` 的位置。比如，`position` 为 'bottom' 时，`popup` 会从屏幕下方移入，并最终固定在屏幕下方。移入/移出的动效会根据 `position` 的不同而自动改变，无需手动配置。

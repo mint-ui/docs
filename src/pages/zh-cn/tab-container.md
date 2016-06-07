@@ -4,6 +4,15 @@
 
 ----------
 
+## 引入
+
+```javascript
+import { TabContainer, TabContainerItem } from 'mint-ui';
+
+Vue.component(TabContainer.name, TabContainer);
+Vue.component(TabContainerItem.name, TabContainerItem);
+```
+
 ## 例子
 
 改变 ative 的值，与 `<tab-container-item>` 的 id 一致即显示对应页面。

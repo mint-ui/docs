@@ -4,6 +4,14 @@
 
 -----------
 
+## 引入
+
+```javascript
+import { Spinner } from 'mint-ui';
+
+Vue.component(Spinner.name, Spinner);
+```
+
 ## 例子
 
 指定类型

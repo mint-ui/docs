@@ -4,6 +4,14 @@
 
 -------------
 
+## 引入
+
+```javascript
+import { Range } from 'mint-ui';
+
+Vue.component(Range.name, Range);
+```
+
 ## 例子
 
 将一个本地变量与 `range` 的 `value` 属性同步即可实现双向绑定

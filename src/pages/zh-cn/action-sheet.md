@@ -4,6 +4,14 @@
 
 -------------
 
+## 引入
+
+```javascript
+import { Actionsheet } from 'mint-ui';
+
+Vue.component(Actionsheet.name, Actionsheet);
+```
+
 ## 例子
 
 `actions` 属性绑定一个由对象组成的数组，每个对象有 `name` 和 `method` 两个键，`name` 为菜单项的文本，`method` 为点击该菜单项的回调函数。

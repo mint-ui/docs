@@ -4,6 +4,14 @@
 
 -----------
 
+## 引入
+
+```javascript
+import { Badge } from 'mint-ui';
+
+Vue.component(Badge.name, Badge);
+```
+
 ## 例子
 
 指定尺寸

@@ -4,6 +4,15 @@
 
 -------------
 
+## 引入
+
+```javascript
+import { Tabbar, TabbarItem } from 'mint-ui';
+
+Vue.component(Tabbar.name, Tabbar);
+Vue.component(TabbarItem.name, TabbarItem);
+```
+
 ## 例子
 
 搭配 <a v-link="{path:'/tab-container'}">tab-container</a> 组件使用

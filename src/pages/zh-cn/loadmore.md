@@ -3,6 +3,15 @@
 > 下拉/上拉刷新，支持自定义 HTML 模板。
 
 -------------
+
+## 引入
+
+```javascript
+import { Loadmore } from 'mint-ui';
+
+Vue.component(Loadmore.name, Loadmore);
+```
+
 ## 例子
 
 ```html

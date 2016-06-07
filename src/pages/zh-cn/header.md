@@ -4,6 +4,14 @@
 
 -------------
 
+## 引入
+
+```javascript
+import { Header } from 'mint-ui';
+
+Vue.component(Header.name, Header);
+```
+
 ## 例子
 
 固定在页面顶部

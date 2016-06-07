@@ -4,6 +4,14 @@
 
 -------------
 
+## 引入
+
+```javascript
+import { Checklist } from 'mint-ui';
+
+Vue.component(Checklist.name, Checklist);
+```
+
 ## 例子
 
 基本用法

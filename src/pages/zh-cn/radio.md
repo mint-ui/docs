@@ -4,6 +4,14 @@
 
 -------------
 
+## 引入
+
+```javascript
+import { Radio } from 'mint-ui';
+
+Vue.component(Radio.name, Radio);
+```
+
 ## 例子
 
 基本用法

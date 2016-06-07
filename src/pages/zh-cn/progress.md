@@ -4,6 +4,14 @@
 
 -------------
 
+## 引入
+
+```javascript
+import { Progress } from 'mint-ui';
+
+Vue.component(Progress.name, Progress);
+```
+
 ## 例子
 
 传入 `value` 作为进度条的宽度。可自定义它的线宽

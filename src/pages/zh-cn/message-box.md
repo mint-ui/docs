@@ -5,7 +5,7 @@
 -------------
 ## 引入
 
-```html
+```javascript
 import { MessageBox } from 'mint-ui';
 ```
 
@@ -13,13 +13,13 @@ import { MessageBox } from 'mint-ui';
 
 以标题与内容字符串为参数进行调用
 
-```html
+```javascript
 MessageBox('提示', '操作成功');
 ```
 
 或者传入一个对象
 
-```html
+```javascript
 MessageBox({
   title: '提示',
   message: '确定执行此操作?',

@@ -4,6 +4,14 @@
 
 ----------
 
+## 引入
+
+```javascript
+import { Search } from 'mint-ui';
+
+Vue.component(Search.name, Search);
+```
+
 ## 例子
 
 基础用法

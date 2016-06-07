@@ -4,6 +4,15 @@
 
 ----------
 
+
+## 引入
+
+```javascript
+import { Cell } from 'mint-ui';
+
+Vue.component(Cell.name, Cell);
+```
+
 ## 例子
 
 基础用法

@@ -5,7 +5,7 @@
 -------------
 ## 引入
 
-```html
+```javascript
 import { Indicator } from 'mint-ui';
 ```
 
@@ -13,19 +13,19 @@ import { Indicator } from 'mint-ui';
 
 当需要显示加载提示框时，调用 `open` 方法
 
-```html
+```javascript
 Indicator.open();
 ```
 
 在加载图标下方显示文本
 
-```html
+```javascript
 Indicator.open('加载中...');
 ```
 
 也可以在调用时传入一个对象
 
-```html
+```javascript
 Indicator.open({
   text: '加载中...',
   spinnerType: 'fading-circle'
@@ -33,7 +33,7 @@ Indicator.open({
 ```
 
 调用 `close` 方法将其关闭
-```html
+```javascript
 Indicator.close();
 ```
 
