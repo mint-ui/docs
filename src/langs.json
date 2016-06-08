@@ -1,9 +1,13 @@
 {
-  "default": "zh-cn",
+  "default": "en",
   "langs": [
     {
       "value": "zh-cn",
       "text": "中文"
+    },
+    {
+      "value": "en",
+      "text": "English"
     }
   ]
 }

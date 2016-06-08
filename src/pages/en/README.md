@@ -34,3 +34,5 @@ Vue.component(Button.name, Button);
 ```
 
 ### Use [babel-plugin-component](https://github.com/QingWei-Li/babel-plugin-component)
+
+
