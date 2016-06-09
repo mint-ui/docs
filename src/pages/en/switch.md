@@ -18,19 +18,19 @@ Vue.component(Switch.name, Switch);
 <mt-switch :value.sync="value"></mt-switch>
 ```
 
-Display content.
+With extra text
 
 ```html
 <mt-switch :value.sync="value">Switch</mt-switch>
 ```
 
 ## API
-| option | description | type | Optional | default |
+| option | description | type | accepted values | default |
 |------|-------|---------|-------|--------|
-| value | value | Boolean | | |
+| value | value of the switch | Boolean | | |
 
 ## Slot
 
 | name | description |
 |------|--------|
-| - | Display content. |
+| - | text content |

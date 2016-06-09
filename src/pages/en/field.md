@@ -1,6 +1,6 @@
 # Field
 
-> form fields.
+> Form field.
 
 ----------
 
@@ -14,7 +14,7 @@ Vue.component(Field.name, Field);
 
 ## Usage
 
-Basic usage.
+Basic usage
 
 ```html
 <mt-field label="username" placeholder="Input username"></mt-field>
@@ -28,7 +28,7 @@ Basic usage.
 ```
 
 
-Validation states.
+Configure validation results
 
 ```html
 <mt-field label="email" state="success"></mt-field>
@@ -38,10 +38,10 @@ Validation states.
 
 
 ## API
-| option | description | type | Optional | default |
+| option | description | type | accepted values | default |
 |------|-------|---------|-------|--------|
-| type | input type, include textarea | String | text, number, email, url, tel, date, datetime, password, textarea | text |
-| label| label | String | | |
-| rows | rows attribute of the textarea | Number | | |
-| placeholder | placeholder |String | | |
-| state | validation states | String | error, success, warning | |
+| type | type of the input | String | text, number, email, url, tel, date, datetime, password, textarea | text |
+| label| label for the input | String | | |
+| rows | rows attribute of textarea | Number | | |
+| placeholder | place holder for the input |String | | |
+| state | validation result | String | error, success, warning | |

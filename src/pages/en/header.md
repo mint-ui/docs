@@ -14,7 +14,7 @@ Vue.component(Header.name, Header);
 
 ## Usage
 
-Fixed at the top of the page.
+Fixed at the top of the page
 
 ```html
 <mt-header fixed title="fixed top"></mt-header>
@@ -29,7 +29,7 @@ Fixed at the top of the page.
 </mt-header>
 ```
 
-Multiple button.
+Multiple buttons
 
 ```html
 <mt-header title="multiple button">
@@ -42,13 +42,13 @@ Multiple button.
 ```
 
 ## API
-| option | description | type | Optional | default |
+| option | description | type | accepted values | default |
 |------|-------|---------|-------|--------|
-| fixed | fixed top | Boolean | | false |
-| title | title| String | |  |
+| fixed | if the header is fixed on top | Boolean | | false |
+| title | title of the header | String | | |
 
 ## Slot
 | name | description |
 |------|--------|
 | left | HTML content on the left |
-| right | HTML content  on the right |
+| right | HTML content on the right |
