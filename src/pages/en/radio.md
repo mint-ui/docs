@@ -1,6 +1,6 @@
 # Radio
 
-> Radio list, dependency <a v-link="{path:'/' + $route.language + '/cell'}">cell</a>.
+> Radio list, depends on <a v-link="{path:'/' + $route.language + '/cell'}">cell</a>.
 
 -------------
 
@@ -14,7 +14,7 @@ Vue.component(Radio.name, Radio);
 
 ## Usage
 
-Basic usage.
+Basic usage
 
 ```html
 <mt-radio
@@ -24,7 +24,7 @@ Basic usage.
 </mt-radio>
 ```
 
-Disable option.
+Can be disabled
 
 ```javascript
 this.options = [
@@ -52,7 +52,7 @@ this.options = [
 </mt-radio>
 ```
 
-Align right.
+Alignment of the radio
 
 ```html
 <mt-radio
@@ -63,10 +63,10 @@ Align right.
 ```
 
 ## API
-| option | description | type | Optional | default |
+| option | description | type | accepted values | default |
 |------|-------|---------|-------|--------|
-| options | Allowed array of strings or array of objects. | Array | |
-|value | value | Array | | |
-|title | The list of title. | string | | |
-|align| Checkboxes position. | String | left, right | left |
+| options | array of options(string or object) | Array | |
+|value | array of the selected option | Array | | |
+|title | title of the list | string | | |
+|align| alignment of the radio | String | left, right | left |
 

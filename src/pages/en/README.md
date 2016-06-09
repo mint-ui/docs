@@ -1,4 +1,4 @@
-# mint-ui Docs
+# Mint UI documentation
 
 -------------
 
@@ -10,7 +10,7 @@ npm install mint-ui --save
 
 # Usage
 
-Import all components.
+Import all components
 
 ```javascript
 import Vue from 'vue';
@@ -20,7 +20,7 @@ import 'mint-ui/lib/style.css';
 Vue.use(MintUI);
 ```
 
-Or import specified component.
+Or import on demand
 
 ```javascript
 import Cell from 'mint-ui/lib/cell';
@@ -35,7 +35,7 @@ Vue.component(Button.name, Button);
 
 ### Use [babel-plugin-component](https://github.com/QingWei-Li/babel-plugin-component)
 
-Automatic import style file
+Style sheet will be automatically imported
 
 ```javascript
 import Vue from 'vue';
@@ -44,7 +44,7 @@ import MintUI from 'mint-ui';
 Vue.use(MintUI);
 ```
 
-Load on demand.
+import on demand
 ```javascript
 import Vue from 'vue';
 import { Cell, Button } from 'mint-ui';
@@ -53,7 +53,7 @@ Vue.component(Cell.name, Cell);
 Vue.component(Button.name, Button);
 ```
 
-Equal to
+Equals to
 ```javascript
 var Vue = require('vue');
 var Cell = require('mint-ui/lib/cell');

@@ -1,6 +1,6 @@
 # Badge
 
-> Highlight new or unread items.
+> Highlight new items/unread notifications.
 
 -----------
 
@@ -15,7 +15,7 @@ Vue.component(Badge.name, Badge);
 ## Usage
 
 
-Specify size.
+Configure size
 
 ```html
 <mt-badge size="small">30</mt-badge>
@@ -23,7 +23,7 @@ Specify size.
 <mt-badge size="large">10</mt-badge>
 ```
 
-Specify type.
+And type
 
 ```html
 <mt-badge type="primary">30</mt-badge>
@@ -32,19 +32,19 @@ Specify type.
 <mt-badge type="warning">10</mt-badge>
 ```
 
-Customize color.
+Even color
 
 ```html
-<mt-badge size="small" color="#888">customize color</mt-badge>
+<mt-badge size="small" color="#888">custom color</mt-badge>
 ```
 
 ## API
-| option | description | type | Optional | default |
+| option | description | type | accepted values | default |
 |------|-------|---------|-------|--------|
-| type | type | String | primary, error, success, warning | primary|
+| type | type of the badge | String | primary, error, success, warning | primary|
 | color | CSS color value | String | | |
-| size | size | String | normal, large, small | normal |
+| size | size of the badge | String | normal, large, small | normal |
 ## Slot
 | name | description |
 |------|--------|
-| - | Display content. |
+| - | test content |

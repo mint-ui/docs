@@ -1,6 +1,6 @@
 # Checklist
 
-> Checkbox list, dependency <a v-link="{path:'/' + $route.language + '/cell'}">cell</a>.
+> Checkbox list, depends on <a v-link="{path:'/' + $route.language + '/cell'}">cell</a>.
 
 -----------
 
@@ -14,7 +14,7 @@ Vue.component(Checklist.name, Checklist);
 
 ## Usage
 
-Basic usage.
+Basic usage
 
 ```html
 <mt-checklist
@@ -24,7 +24,7 @@ Basic usage.
 </mt-checklist>
 ```
 
-Disable option.
+Can be disabled
 
 ```javascript
 this.options = [
@@ -56,7 +56,7 @@ this.options = [
 </mt-checklist>
 ```
 
-Maximum number of optional.
+Configure the maximum amount of checked options
 
 ```html
 <mt-checklist
@@ -66,7 +66,7 @@ Maximum number of optional.
 </mt-checklist>
 ```
 
-Align right.
+Alignment of the check box
 
 ```html
 <mt-checklist
@@ -77,10 +77,10 @@ Align right.
 ```
 
 ## API
-| option | description | type | Optional | default |
+| option | description | type | accepted values | default |
 |------|-------|---------|-------|--------|
-| options | Allowed array of strings or array of objects. | Array | |
-|value | value | Array | | |
-|title | The list of title. | string | | |
-|max| Maximum number of optional. | Number | | |
-|align| Checkboxes position. | String | left, right | left |
+| options | array of options(string or object) | Array | |
+|value | array of checked options | Array | | |
+|title | title of the list | String | | |
+|max| maximum amount of checked options | Number | | |
+|align| alignment of the check box | String | left, right | left |
