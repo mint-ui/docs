@@ -4,73 +4,93 @@ html, body {
   -webkit-overflow-scrolling: touch;
 }
 
-h1, h2, h3 {
-  color: #444;
-  font-size: 1.2em;
-  margin: 1.5em 0 1.2em;
-}
-
-h1 {
-  font-size: 2em;
-}
-
-h3 {
-  font-size: 1em;
-}
-
-hr {
-  border: 0;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-pre {
-  background-color: #f8f8f8;
-  padding: 20px;
-  margin: 1.2em 0;
-  overflow: auto;
-}
-
-p > code {
-  background-color: #eee;
-  padding: 2px;
-  color: #26a2ff;
-}
-
-blockquote {
-  margin-bottom: 20px;
-}
-
 a {
-  color: #4078c0;
   text-decoration: none;
 }
 
-::-webkit-scrollbar {
-  /*width: 0;*/
-}
-
-table th:nth-child(3),
-table th:nth-child(5) {
-  width: 65px;
-}
-
-table th:nth-child(4) {
-  width: 110px;
-}
-
-@media screen and (max-width: 768px) {
-  .table-container {
-    overflow-x: scroll;
+.content {
+  h1, h2, h3 {
+    color: #444;
+    font-size: 1.2em;
+    margin: 1.5em 0 1.2em;
   }
 
-  .table {
-    width: auto;
-    min-width: 100%;
-    table-layout: auto;
+  h1 {
+    font-size: 2em;
   }
 
-  .table-container .table th {
-    width: auto;
-    min-width: 100px;
+  h3 {
+    font-size: 1em;
+  }
+
+  p {
+    line-height: 1.6rem;
+  }
+
+  ul {
+    list-style-type: disc;
+    margin: 10px 0;
+
+    li {
+      margin-left: 30px;
+      line-height: 1.6rem;
+    }
+  }
+
+  hr {
+    border: 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  pre {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin: 1.2em 0;
+    overflow: auto;
+  }
+
+  p > code {
+    background-color: #eee;
+    padding: 2px;
+    color: #26a2ff;
+  }
+
+  blockquote {
+    margin-bottom: 20px;
+  }
+
+  a {
+    color: #4078c0;
+    text-decoration: none;
+  }
+
+  ::-webkit-scrollbar {
+    /*width: 0;*/
+  }
+
+  table th:nth-child(3),
+  table th:nth-child(5) {
+    width: 65px;
+  }
+
+  table th:nth-child(4) {
+    width: 110px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .table-container {
+      overflow-x: scroll;
+    }
+
+    .table {
+      width: auto;
+      min-width: 100%;
+      table-layout: auto;
+    }
+
+    .table-container .table th {
+      width: auto;
+      min-width: 100px;
+    }
   }
 }

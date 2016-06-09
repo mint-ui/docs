@@ -35,4 +35,49 @@ Vue.component(Button.name, Button);
 
 ### Use [babel-plugin-component](https://github.com/QingWei-Li/babel-plugin-component)
 
+Automatic import style file
+
+```javascript
+import Vue from 'vue';
+import MintUI from 'mint-ui';
+
+Vue.use(MintUI);
+```
+
+Load on demand.
+```javascript
+import Vue from 'vue';
+import { Cell, Button } from 'mint-ui';
+
+Vue.component(Cell.name, Cell);
+Vue.component(Button.name, Button);
+```
+
+Equal to
+```javascript
+var Vue = require('vue');
+var Cell = require('mint-ui/lib/cell');
+require('mint-ui/lib/cell/style.css');
+
+var Button = require('mint-ui/lib/button');
+require('mint-ui/lib/button/style.css');
+
+Vue.component(Cell.name, Cell);
+Vue.component(Button.name, Button);
+```
+
+### Install `babel-plugin-component`
+```shell
+npm i babel-plugin-component -D
+```
+
+.babelrc
+```json
+{
+  "plugins": ["other-plugin", ["component", [
+    { "libraryName": "mint-ui", "style": true }
+  ]]]
+}
+```
+
 

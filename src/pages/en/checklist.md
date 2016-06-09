@@ -4,7 +4,7 @@
 
 -----------
 
-## Install
+## Import
 
 ```javascript
 import { Checklist } from 'mint-ui';
@@ -14,6 +14,8 @@ Vue.component(Checklist.name, Checklist);
 
 ## Usage
 
+Basic usage.
+
 ```html
 <mt-checklist
   title="checkbox list"
@@ -22,12 +24,12 @@ Vue.component(Checklist.name, Checklist);
 </mt-checklist>
 ```
 
-Disable option
+Disable option.
 
 ```javascript
 this.options = [
   {
-    label: 'disable',
+    label: 'disabled option',
     value: 'valueF',
     disabled: true
   },
@@ -54,7 +56,7 @@ this.options = [
 </mt-checklist>
 ```
 
-设置最大可选数
+Maximum number of optional.
 
 ```html
 <mt-checklist
@@ -64,7 +66,7 @@ this.options = [
 </mt-checklist>
 ```
 
-选择框右对齐
+Align right.
 
 ```html
 <mt-checklist
@@ -75,10 +77,10 @@ this.options = [
 ```
 
 ## API
-| param | description | type | Optional | default |
+| option | description | type | Optional | default |
 |------|-------|---------|-------|--------|
-| options | 选择项 | Array | |
-|value | 绑定值 | Array | | |
-|title | 标题，显示在列表上方 | string | | |
-|max| 最多可选个数，超过后其他未选择的选项变成禁用状态 | Number | | |
-|align| 复选框对其位置| String | left, right | left |
+| options | Allowed array of strings or array of objects. | Array | |
+|value | value | Array | | |
+|title | The list of title. | string | | |
+|max| Maximum number of optional. | Number | | |
+|align| Checkboxes position. | String | left, right | left |

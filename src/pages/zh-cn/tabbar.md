@@ -15,7 +15,7 @@ Vue.component(TabbarItem.name, TabbarItem);
 
 ## 例子
 
-搭配 <a v-link="{path:'/tab-container'}">tab-container</a> 组件使用
+搭配 <a v-link="{path:'/' + $route.language + '/tab-container'}">tab-container</a> 组件使用
 
 ```html
 <mt-tabbar :selected.sync="selected">

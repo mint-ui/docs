@@ -4,7 +4,7 @@
 
 ---------------
 
-## Install
+## Import
 
 ```javascript
 import { Switch } from 'mint-ui';
@@ -25,7 +25,7 @@ Display content.
 ```
 
 ## API
-| param | description | type | Optional | default |
+| option | description | type | Optional | default |
 |------|-------|---------|-------|--------|
 | value | value | Boolean | | |
 
