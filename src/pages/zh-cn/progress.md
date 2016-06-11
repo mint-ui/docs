@@ -1,4 +1,4 @@
-# Range
+# Progress
 
 > 进度条。
 
@@ -14,7 +14,7 @@ Vue.component(Progress.name, Progress);
 
 ## 例子
 
-传入 `value` 作为进度条的宽度。可自定义它的线宽
+传入 `value` 作为进度条的值。可自定义它的线宽
 
 ```html
 <mt-progress :value="20" :bar-height="5"></mt-progress>

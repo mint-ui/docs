@@ -38,7 +38,7 @@ Configure validation results
 
 
 ## API
-| option | description | type | accepted values | default |
+| option | description | type | acceptable values | default |
 |------|-------|---------|-------|--------|
 | type | type of the input | String | text, number, email, url, tel, date, datetime, password, textarea | text |
 | label| label for the input | String | | |

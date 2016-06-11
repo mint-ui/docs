@@ -66,7 +66,7 @@ For example, to customize the top DOM, you'll need to add a variable that syncs 
 If you decide not to customize HTML templates, you can configure the texts that comes with `loadmore`. Take the top DOM for example, corresponding to the three `top-status` states, configurable options are: `topPullText`, `topDropText` and `topLoadingText`. And `bottomPullText`, `bottomDropText` and `bottomLoadingText` are for the bottom DOM.
 
 ## API
-| options | description | type | accepted values | default |
+| option | description | type | acceptable values | default |
 |------|-------|---------|-------|--------|
 | topPullText | top text when the component is being pulled down | String | | '下拉刷新' |
 | topDropText | top text when the component is ready to drop | String | | '释放更新' |

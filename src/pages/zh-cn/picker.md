@@ -14,7 +14,7 @@ Vue.component(Picker.name, Picker);
 
 ## 例子
 
-传入 `slots` ，当被选中的值发生变化时触发 `change` 事件。`change` 事件有两个参数，分别为当前 `picker` 的 vue 实例和各 slot 被选中的值组成的数组
+传入 `slots`，当被选中的值发生变化时触发 `change` 事件。`change` 事件有两个参数，分别为当前 `picker` 的 vue 实例和各 slot 被选中的值组成的数组
 
 ```html
 <mt-picker :slots="slots" @change="onValuesChange"></mt-picker>

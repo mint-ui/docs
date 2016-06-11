@@ -63,7 +63,7 @@ Alignment of the radio
 ```
 
 ## API
-| option | description | type | accepted values | default |
+| option | description | type | acceptable values | default |
 |------|-------|---------|-------|--------|
 | options | array of options(string or object) | Array | |
 |value | array of the selected option | Array | | |

@@ -42,7 +42,7 @@ Multiple buttons
 ```
 
 ## API
-| option | description | type | accepted values | default |
+| option | description | type | acceptable values | default |
 |------|-------|---------|-------|--------|
 | fixed | if the header is fixed on top | Boolean | | false |
 | title | title of the header | String | | |

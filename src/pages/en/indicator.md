@@ -38,7 +38,7 @@ Indicator.close();
 ```
 
 ## API
-| options | description | type | accepted values | default |
+| option | description | type | acceptable values | default |
 |------|-------|---------|-------|--------|
 | text | indicator text | String | | |
 | spinnerType | type of the spinner | String | 'snake'<br>'fading-circle'<br>'double-bounce'<br>'triple-bounce' | 'snake' |

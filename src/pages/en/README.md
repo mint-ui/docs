@@ -33,7 +33,7 @@ Vue.component(Cell.name, Cell);
 Vue.component(Button.name, Button);
 ```
 
-### Use [babel-plugin-component](https://github.com/QingWei-Li/babel-plugin-component)
+## Use [babel-plugin-component](https://github.com/QingWei-Li/babel-plugin-component)
 
 Style sheet will be automatically imported
 
@@ -66,12 +66,12 @@ Vue.component(Cell.name, Cell);
 Vue.component(Button.name, Button);
 ```
 
-### Install `babel-plugin-component`
+## Install `babel-plugin-component`
 ```shell
 npm i babel-plugin-component -D
 ```
 
-.babelrc
+Configure .babelrc like this
 ```json
 {
   "plugins": ["other-plugin", ["component", [

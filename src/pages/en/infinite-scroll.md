@@ -39,7 +39,7 @@ loadMore() {
 ```
 
 ## API
-| options | description | type | accepted values | default |
+| option | description | type | acceptable values | default |
 |------|-------|---------|-------|--------|
 | infinite-scroll-disabled | if `true`, infinite scroll will not be triggered | Boolean | | false |
 | infinite-scroll-distance | distance threshold to trigger the load-method | Number | | 0 |
