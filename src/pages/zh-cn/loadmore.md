@@ -65,9 +65,13 @@ loadBottom(id) {
 ## 配置加载提示区域的文字
 在不使用自定义 HTML 模板的情况下，可以配置 `loadmore` 本身自带的加载提示区域的文字。以列表顶部为例，对应于 `top-status` 的三个状态，可配置的属性依次为 `topPullText`、`topDropText` 和 `topLoadingText`。与之对应的底部属性为 `bottomPullText`、`bottomDropText` 和 `bottomLoadingText`。
 
+## 自动检测
+`loadmore` 在初始化时会自动检测它的高度是否能够撑满其容器，如果不能则会调用 `bottom-method`，直到撑满容器为止。如果不希望使用这一机制，可以将 `auto-fill` 设为 `false`。
+
 ## API
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 |------|-------|---------|-------|--------|
+| autoFill | 若为真，`loadmore` 会自动检测并撑满其容器 | Boolean | | true |
 | topPullText | `topStatus` 为 `pull` 时加载提示区域的文字 | String | | '下拉刷新' |
 | topDropText | `topStatus` 为 `drop` 时加载提示区域的文字 | String | | '释放更新' |
 | topLoadingText | `topStatus` 为 `loading` 时加载提示区域的文字 | String | | '加载中...' |
