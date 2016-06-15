@@ -42,6 +42,7 @@ Configure validation results
 |------|-------|---------|-------|--------|
 | type | type of the input | String | text, number, email, url, tel, date, datetime, password, textarea | text |
 | label| label for the input | String | | |
+| value| value for the input | String | | |
 | rows | rows attribute of textarea | Number | | |
 | placeholder | place holder for the input |String | | |
 | state | validation result | String | error, success, warning | |
