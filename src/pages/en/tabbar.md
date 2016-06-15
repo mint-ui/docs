@@ -39,14 +39,14 @@ Vue.component(TabbarItem.name, TabbarItem);
 ## API
 
 ### tabbar
-| option | description | type | accepted values | default |
+| option | description | type | acceptable values | default |
 |------|-------|---------|-------|--------|
 | fixed | if the tab bar is fixed on bottom | Boolean | | false |
 | selected | id of the selected tab item | * | |  |
 
 
 ### tab-item
-| option | description | type | accepted values | default |
+| option | description | type | acceptable values | default |
 |------|-------|---------|-------|--------|
 | id | id of the tab item. The item shows when its id equals to `selected` | * | |  |
 

@@ -37,7 +37,7 @@ Toast({
 ```
 
 ## API
-| option | description | type | accepted values | default |
+| option | description | type | acceptable values | default |
 |------|-------|---------|-------|--------|
 | message | toast text content | String | | |
 | position | location of the toast | String | 'top'<br>'bottom'<br>'middle' | 'middle' |

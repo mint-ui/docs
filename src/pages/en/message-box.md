@@ -55,7 +55,7 @@ MessageBox.prompt('Please tell me your name').then((value, action) => {
 If the user clicks the cancel button in prompt, the returned Promise will be rejected
 
 ## API
-| options | description | type | accepted values | default |
+| option | description | type | acceptable values | default |
 |------|-------|---------|-------|--------|
 | title | title of the message box | String | | |
 | message | message of the message box | String | | |

@@ -39,7 +39,7 @@ Even color
 ```
 
 ## API
-| option | description | type | accepted values | default |
+| option | description | type | acceptable values | default |
 |------|-------|---------|-------|--------|
 | type | type of the badge | String | primary, error, success, warning | primary|
 | color | CSS color value | String | | |

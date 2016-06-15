@@ -25,7 +25,7 @@ With extra text
 ```
 
 ## API
-| option | description | type | accepted values | default |
+| option | description | type | acceptable values | default |
 |------|-------|---------|-------|--------|
 | value | value of the switch | Boolean | | |
 

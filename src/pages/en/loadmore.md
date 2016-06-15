@@ -65,9 +65,13 @@ For example, to customize the top DOM, you'll need to add a variable that syncs 
 ## Configure texts in top and bottom DOM
 If you decide not to customize HTML templates, you can configure the texts that comes with `loadmore`. Take the top DOM for example, corresponding to the three `top-status` states, configurable options are: `topPullText`, `topDropText` and `topLoadingText`. And `bottomPullText`, `bottomDropText` and `bottomLoadingText` are for the bottom DOM.
 
+## Auto fill
+Upon loaded, `loadmore` will automatically check if it is tall enough to fill its container. If not, `bottom-method` will run until its container is filled. Turn off `auto-fill` if you'd rather handle this manually.
+
 ## API
-| options | description | type | accepted values | default |
+| option | description | type | acceptable values | default |
 |------|-------|---------|-------|--------|
+| autoFill | if `true`, `loadmore` will check and fill its container | Boolean | | true |
 | topPullText | top text when the component is being pulled down | String | | '下拉刷新' |
 | topDropText | top text when the component is ready to drop | String | | '释放更新' |
 | topLoadingText | top text while `topMethod` is running | String | | '加载中...' |
