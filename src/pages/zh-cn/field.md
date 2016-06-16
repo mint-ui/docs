@@ -39,6 +39,7 @@ Vue.component(Field.name, Field);
 |------|-------|---------|-------|--------|
 | type | 输入框类型 | String | text, number, email, url, tel, date, datetime, password, textarea | text |
 | label| 标签 | String | | |
+| value| 绑定表单输入值 | String | | |
 | rows | 类型为 textarea 时可指定高度（显示行数）| Number | | |
 | placeholder | 占位内容 |String | | |
 | state | 校验状态 | String | error, success, warning | |
