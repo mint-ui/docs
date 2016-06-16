@@ -49,7 +49,7 @@ Vue.component(Search.name, Search);
 ## API
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 |------|-------|---------|-------|--------|
-| string | 搜索结果绑定值  | String | |   |
+| value | 搜索结果绑定值  | String | |   |
 |cancel-text | 取消按钮文字 | String | | 取消 |
 |placeholder | 搜索框占位内容  | String | | 搜索 |
 | result | 搜索结果列表 | Array | | |
