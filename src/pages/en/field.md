@@ -36,6 +36,12 @@ Configure validation results
 <mt-field label="email" state="warning"></mt-field>
 ```
 
+Custom content
+```html
+<mt-field label="captcha">
+  <img src="../assets/100x100.png" height="45px" width="100px">
+</mt-field>
+```
 
 ## API
 | option | description | type | acceptable values | default |
@@ -46,3 +52,8 @@ Configure validation results
 | rows | rows attribute of textarea | Number | | |
 | placeholder | place holder for the input |String | | |
 | state | validation result | String | error, success, warning | |
+
+## Slot
+| name | description |
+|------|--------|
+| - | displayed text |

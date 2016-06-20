@@ -33,6 +33,13 @@ Vue.component(Field.name, Field);
 <mt-field label="邮箱" state="warning"></mt-field>
 ```
 
+自定义内容（例如添加验证码）
+```html
+<mt-field label="验证码">
+  <img src="../assets/100x100.png" height="45px" width="100px">
+</mt-field>
+```
+
 
 ## API
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
@@ -43,3 +50,9 @@ Vue.component(Field.name, Field);
 | rows | 类型为 textarea 时可指定高度（显示行数）| Number | | |
 | placeholder | 占位内容 |String | | |
 | state | 校验状态 | String | error, success, warning | |
+
+## Slot
+| name | 描述 |
+|------|--------|
+| - | 显示的 HTML 内容|
+
