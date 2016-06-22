@@ -7,10 +7,10 @@
 ## 引入
 
 ```javascript
-import { Navbar, NavbarItem } from 'mint-ui';
+import { Navbar, TabItem } from 'mint-ui';
 
 Vue.component(Navbar.name, Navbar);
-Vue.component(NavbarItem.name, NavbarItem);
+Vue.component(TabItem.name, TabItem);
 ```
 
 ## 例子

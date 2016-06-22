@@ -7,10 +7,10 @@
 ## Import
 
 ```javascript
-import { Tabbar, TabbarItem } from 'mint-ui';
+import { Tabbar, TabItem } from 'mint-ui';
 
 Vue.component(Tabbar.name, Tabbar);
-Vue.component(TabbarItem.name, TabbarItem);
+Vue.component(TabItem.name, TabItem);
 ```
 
 ## Usage
