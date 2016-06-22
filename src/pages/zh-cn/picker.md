@@ -72,6 +72,7 @@ export default {
 | divider | 对应 slot 是否为分隔符 |
 | content | 分隔符 slot 的显示文本 |
 | values | 对应 slot 的备选值数组 |
+| defaultIndex | 对应 slot 初始选中值，需传入其在 values 数组中的序号，默认为 0 |
 | textAlign | 对应 slot 的对齐方式 |
 | flex | 对应 slot CSS 的 flex 值|
 | className | 对应 slot 的类名 |
