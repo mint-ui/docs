@@ -20,7 +20,7 @@
   "author": "elemefe",
   "license": "MIT",
   "dependencies": {
-    "vue": "*",
+    "vue": "^1.0.0",
     "vue-router": "^0.7.13"
   },
   "devDependencies": {
