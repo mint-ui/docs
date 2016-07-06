@@ -48,7 +48,7 @@ MessageBox.confirm('确定执行此操作?').then(action => {
 MessageBox.prompt(message, title);
 ```
 ```javascript
-MessageBox.prompt('请输入姓名').then((value, action) => {
+MessageBox.prompt('请输入姓名').then(({ value, action }) => {
   ...
 });
 ```

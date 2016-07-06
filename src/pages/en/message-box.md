@@ -48,7 +48,7 @@ MessageBox.confirm('Are you sure?').then(action => {
 MessageBox.prompt(message, title);
 ```
 ```javascript
-MessageBox.prompt('Please tell me your name').then((value, action) => {
+MessageBox.prompt('Please tell me your name').then(({ value, action }) => {
   ...
 });
 ```
