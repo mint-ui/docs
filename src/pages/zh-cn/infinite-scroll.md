@@ -9,7 +9,7 @@
 ```javascript
 import { InfiniteScroll } from 'mint-ui';
 
-Vue.directive(InfiniteScroll.name, InfiniteScroll);
+Vue.use(InfiniteScroll);
 ```
 
 ## 例子

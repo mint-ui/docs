@@ -9,7 +9,7 @@
 ```javascript
 import { Lazyload } from 'mint-ui';
 
-Vue.directive(Lazyload.name, Lazyload);
+Vue.use(Lazyload);
 ```
 
 ## Example
