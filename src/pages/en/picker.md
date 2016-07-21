@@ -72,6 +72,7 @@ The `slots` array is made up of objects. Each object represents a slot
 | divider | if the corresponding slot is a divider |
 | content | the text of the divider slot |
 | values | array of acceptable values of the corresponding slot |
+| defaultIndex | the index of the default picked value for the corresponding slot. Default is 0 |
 | textAlign | alignment of the corresponding slot |
 | flex | value of CSS `flex` for the corresponding slot |
 | className | class name of the corresponding slot |
