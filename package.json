@@ -5,8 +5,9 @@
   "private": false,
   "keywords": [],
   "scripts": {
-    "dev": "cooking watch",
-    "dist": "cooking build -p",
+    "router": "node bin/build-router",
+    "dev": "npm run router && cooking watch",
+    "dist": "npm run router && cooking build -p",
     "deploy": "npm run dist && gh-pages -d dist"
   },
   "repository": {
@@ -26,6 +27,7 @@
   "devDependencies": {
     "gh-pages": "^0.11.0",
     "highlight.js": "^9.4.0",
+    "json-templater": "^1.0.4",
     "my-local-ip": "^1.0.0",
     "sushi-ui": "^0.8.2",
     "vue-markdown-loader": "^0.1.4"

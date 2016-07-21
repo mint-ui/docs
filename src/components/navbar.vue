@@ -39,9 +39,9 @@
 </template>
 
 <script>
-  import { navs } from '../route';
+  import NavsConfig from '../nav.config.json';
 
-  navs.map(item => {
+  NavsConfig.map(item => {
     item.visible = true;
     return item;
   });
@@ -49,7 +49,7 @@
   export default {
     data() {
       return {
-        navs: navs
+        navs: NavsConfig
       };
     }
   };
