@@ -15,7 +15,7 @@ LANG_CONFIG.langs.forEach(item => {
 
 router.map({
   '/': {
-    component: require('./pages/README.md'),
+    component: resolve => require(['./pages/README.md'], resolve),
     default_lang: defaultLang,
     langs: LANG_CONFIG.langs,
     title: '选择语言'
@@ -89,6 +89,11 @@ router.map({
     title: 'Picker',
     language: 'zh-cn',
     component: resolve => require(['./pages/zh-cn/picker.md'], resolve)
+  },
+  '/zh-cn/datetime-picker': {
+    title: 'Datetime Picker',
+    language: 'zh-cn',
+    component: resolve => require(['./pages/zh-cn/datetime-picker.md'], resolve)
   },
   '/zh-cn/header': {
     title: 'Header',
@@ -224,6 +229,11 @@ router.map({
     title: 'Picker',
     language: 'en',
     component: resolve => require(['./pages/en/picker.md'], resolve)
+  },
+  '/en/datetime-picker': {
+    title: 'Datetime Picker',
+    language: 'en',
+    component: resolve => require(['./pages/en/datetime-picker.md'], resolve)
   },
   '/en/header': {
     title: 'Header',

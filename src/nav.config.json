@@ -49,6 +49,10 @@
       {
         "path": "/picker",
         "name": "Picker"
+      },
+      {
+        "path": "/datetime-picker",
+        "name": "Datetime Picker"
       }
     ]
   },

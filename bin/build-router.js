@@ -44,7 +44,7 @@ var ITEM_TEMPLATE =
 `'{{path}}': {
     title: '{{title}}',
     language: '{{language}}',
-    component: require(['{{componentPath}}'], resolve)
+    component: resolve => require(['{{componentPath}}'], resolve)
   }`;
 
 var renderRouter = function(str) {
