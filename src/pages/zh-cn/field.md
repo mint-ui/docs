@@ -49,6 +49,8 @@ Vue.component(Field.name, Field);
 | value| 绑定表单输入值 | String | | |
 | rows | 类型为 textarea 时可指定高度（显示行数）| Number | | |
 | placeholder | 占位内容 |String | | |
+| readonly | readonly |Boolean | | false |
+| disabled | disabled |Boolean | | false |
 | state | 校验状态 | String | error, success, warning | |
 
 ## Slot

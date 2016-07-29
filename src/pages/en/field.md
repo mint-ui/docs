@@ -51,6 +51,8 @@ Custom content
 | value| value for the input | String | | |
 | rows | rows attribute of textarea | Number | | |
 | placeholder | place holder for the input |String | | |
+| readonly | readonly |Boolean | | false |
+| disabled | disabled |Boolean | | false |
 | state | validation result | String | error, success, warning | |
 
 ## Slot
