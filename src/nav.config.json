@@ -53,6 +53,10 @@
       {
         "path": "/datetime-picker",
         "name": "Datetime Picker"
+      },
+      {
+        "path": "/index-list",
+        "name": "Index List"
       }
     ]
   },

@@ -95,6 +95,11 @@ router.map({
     language: 'zh-cn',
     component: resolve => require(['./pages/zh-cn/datetime-picker.md'], resolve)
   },
+  '/zh-cn/index-list': {
+    title: 'Index List',
+    language: 'zh-cn',
+    component: resolve => require(['./pages/zh-cn/index-list.md'], resolve)
+  },
   '/zh-cn/header': {
     title: 'Header',
     language: 'zh-cn',
@@ -234,6 +239,11 @@ router.map({
     title: 'Datetime Picker',
     language: 'en',
     component: resolve => require(['./pages/en/datetime-picker.md'], resolve)
+  },
+  '/en/index-list': {
+    title: 'Index List',
+    language: 'en',
+    component: resolve => require(['./pages/en/index-list.md'], resolve)
   },
   '/en/header': {
     title: 'Header',
