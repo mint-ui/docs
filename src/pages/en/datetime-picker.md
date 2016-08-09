@@ -43,13 +43,12 @@ You can configure a custom template for slot options. The template should be a s
 </mt-datetime-picker>
 ```
 
-Datetime picker has two events: `change` event triggers when `value` changes, and `confirm` event triggers when the confirm button is tapped. Current `value` is passed to both of them as their parameter.
+When the confirm button is tapped, the `confirm` event triggers with `value` as its parameter.
 
 ```html
 <mt-datetime-picker
   :visible.sync="pickerVisible"
   type="time"
-  @change="handleChange"
   @confirm="handleConfirm">
 </mt-datetime-picker>
 ```
@@ -62,8 +61,8 @@ Datetime picker has two events: `change` event triggers when `value` changes, an
 | type | type of the picker | String | 'datetime', 'date', 'time' | 'datetime' |
 | cancelText | text of the cancel button | String | | '取消' |
 | confirmText | text of the confirm button | String | | '确定' |
-| startYear | minimum possible value for year | Number | | 2000 |
-| endYear | maximal possible value for year | Number | | current year |
+| startDate | minimum possible date | Date | | Jan. 1st a decade ago |
+| endDate | maximal possible date | Date | | Dec. 31st a decade after |
 | startHour | minimum possible value for hour | Number | | 0 |
 | endHour | maximal possible value for hour | Number | | 23 |
 | yearFormat | custom template for year | String | | '{value}' |

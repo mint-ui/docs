@@ -43,13 +43,12 @@ Vue.component(DatetimePicker.name, DatetimePicker);
 </mt-datetime-picker>
 ```
 
-当 value 的值发生改变时会触发 `change` 事件；当点击确认按钮时会触发 `confirm` 事件。两者的参数均为当前 value 的值。
+当点击确认按钮时会触发 `confirm` 事件，参数为当前 value 的值。
 
 ```html
 <mt-datetime-picker
   :visible.sync="pickerVisible"
   type="time"
-  @change="handleChange"
   @confirm="handleConfirm">
 </mt-datetime-picker>
 ```
@@ -62,8 +61,8 @@ Vue.component(DatetimePicker.name, DatetimePicker);
 | type | 组件的类型 | String | 'datetime', 'date', 'time' | 'datetime' |
 | cancelText | 取消按钮文本 | String | | '取消' |
 | confirmText | 确定按钮文本 | String | | '确定' |
-| startYear | 年份的最小可选值 | Number | | 2000 |
-| endYear | 年份的最大可选值 | Number | | 当前年份 |
+| startDate | 日期的最小可选值 | Date | | 十年前的 1 月 1 日 |
+| endDate | 日期的最大可选值 | Date | | 十年后的 12 月 31 日 |
 | startHour | 小时的最小可选值 | Number | | 0 |
 | endHour | 小时的最大可选值 | Number | | 23 |
 | yearFormat | 年份模板 | String | | '{value}' |
