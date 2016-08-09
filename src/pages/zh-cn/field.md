@@ -42,6 +42,7 @@ Vue.component(Field.name, Field);
 
 
 ## API
+
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 |------|-------|---------|-------|--------|
 | type | 输入框类型 | String | text, number, email, url, tel, date, datetime, password, textarea | text |
@@ -52,6 +53,7 @@ Vue.component(Field.name, Field);
 | readonly | readonly |Boolean | | false |
 | disabled | disabled |Boolean | | false |
 | state | 校验状态 | String | error, success, warning | |
+| attr | 设置原生属性，例如 `:attr="{ maxlength: 10 }"` | Object | |
 
 ## Slot
 | name | 描述 |

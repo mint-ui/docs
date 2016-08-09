@@ -54,6 +54,7 @@ Custom content
 | readonly | readonly |Boolean | | false |
 | disabled | disabled |Boolean | | false |
 | state | validation result | String | error, success, warning | |
+| attr | set native attributes. e.g. `:attr="{ maxlength: 10 }"` | Object | |
 
 ## Slot
 | name | description |
