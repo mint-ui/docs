@@ -37,6 +37,7 @@ Only the `<mt-tab-container-item>` whose `id` equals the `active` attribute in `
 | option | description | type | acceptable values | default |
 |------|-------|---------|-------|--------|
 | active | the `id` of the active tab | * | | |
+| swipeable | swipe effect | Boolean | | false |
 
 ### tab-container-item
 

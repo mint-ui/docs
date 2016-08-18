@@ -37,6 +37,7 @@ Vue.component(TabContainerItem.name, TabContainerItem);
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 |------|-------|---------|-------|--------|
 | active | 当前激活的 id | * | | |
+| swipeable | 显示滑动效果 | Boolean | | false |
 
 ### tab-container-item
 
