@@ -30,6 +30,6 @@
     "json-templater": "^1.0.4",
     "my-local-ip": "^1.0.0",
     "sushi-ui": "^0.8.2",
-    "vue-markdown-loader": "^0.1.4"
+    "vue-markdown-loader": "^0.4.0"
   }
 }
