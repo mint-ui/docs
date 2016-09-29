@@ -1,10 +1,10 @@
 # Button
 
-> Buttons with configurable type, size and customized icons.
+> 按钮，提供几种基础样式和尺寸，可自定义图标。
 
 ------------
 
-## Import
+## 引入
 
 ```javascript
 import { Button } from 'mint-ui';
@@ -12,9 +12,8 @@ import { Button } from 'mint-ui';
 Vue.component(Button.name, Button);
 ```
 
-## Example
-
-Configure color
+## 例子
+改变颜色
 
 ```html
 <mt-button type="default">default</mt-button>
@@ -22,7 +21,7 @@ Configure color
 <mt-button type="danger">danger</mt-button>
 ```
 
-Configure size
+改变大小
 
 ```html
 <mt-button size="small">small</mt-button>
@@ -30,45 +29,45 @@ Configure size
 <mt-button size="normal">normal</mt-button>
 ```
 
-Disabled
+禁用按钮
 
 ```html
 <mt-button disabled>disabled</mt-button>
 ```
 
-Ghost button
+幽灵按钮
 
 ```html
 <mt-button plain>plain</mt-button>
 ```
 
-With icon
+带图标
 ```html
 <mt-button icon="back">back</mt-button>
-<mt-button icon="more">more</mt-button>
+<mt-button icon="more">更多</mt-button>
 ```
 
-With custom icon
+自定义图标
 ```html
 <mt-button>
   <img src="../assets/100x100.png" height="20" width="20" slot="icon">
-  icon
+  带自定义图标
 </mt-button>
 ```
 
 ## API
 
-| option | description | type | acceptable values | default |
+| 参数 | 说明 | 类型 | 可选值 | 默认值 |
 |------|-------|---------|-------|--------|
-| plain | if the button is a ghost button | Boolean | | false |
-| disabled | if the button is disabled | Boolean | | false |
-| type | type of the button | String |  default, primary, danger | default |
-| size | size of the button | String | small, normal, large | normal |
-| icon | button icon | String | more, back | |
+| plain | 幽灵按钮 | Boolean | | false |
+| disabled | 禁用状态 | Boolean | | false |
+| type | 按钮显示样式 | String |  default, primary, danger | default |
+| size | 尺寸 | String | small, normal, large | normal |
+| icon | 图标 | String | more, back | |
 
 ## Slot
-| name | description |
+| name | 描述 |
 |------|--------|
-| - | displayed text |
-| icon | custom icon |
+| - | 显示的文本内容|
+| icon | 自定义显示的图标|
 

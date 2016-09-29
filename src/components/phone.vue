@@ -14,7 +14,7 @@ export default {
 
   computed: {
     routePath() {
-      return this.$route.path.replace(/^\/(zh-cn|en)/, '');
+      return this.$route.path.replace(/^\/(zh-cn|en)2?/, '');
     }
   }
 };

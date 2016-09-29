@@ -17,7 +17,7 @@ Vue.component(TabItem.name, TabItem);
 Works with <a v-link="{path:'/tab-container'}">tab-container</a>
 
 ```html
-<mt-navbar class="page-part" :selected.sync="selected">
+<mt-navbar v-model="selected">
   <mt-tab-item id="1">option A</mt-tab-item>
   <mt-tab-item id="2">option B</mt-tab-item>
   <mt-tab-item id="3">option C</mt-tab-item>
@@ -26,13 +26,13 @@ Works with <a v-link="{path:'/tab-container'}">tab-container</a>
 <!-- tab-container -->
 <mt-tab-container :active.sync="selected">
   <mt-tab-container-item id="1">
-    <mt-cell v-for="n in 10" :title="'content ' + n"></mt-cell>
+    <mt-cell v-for="n in 10" :title="'content ' + n" />
   </mt-tab-container-item>
   <mt-tab-container-item id="2">
-    <mt-cell v-for="n in 4" :title="'content ' + n"></mt-cell>
+    <mt-cell v-for="n in 4" :title="'content ' + n" />
   </mt-tab-container-item>
   <mt-tab-container-item id="3">
-    <mt-cell v-for="n in 6" :title="'content ' + n"></mt-cell>
+    <mt-cell v-for="n in 6" :title="'content ' + n" />
   </mt-tab-container-item>
 </mt-tab-container>
 ```
@@ -44,7 +44,7 @@ Works with <a v-link="{path:'/tab-container'}">tab-container</a>
 | option | description | type | acceptable values | default |
 |------|-------|---------|-------|--------|
 | fixed | if the component is fixed at the top | Boolean | | false |
-| selected | id of the selected tab-item | * | |  |
+| value | id of the selected tab-item | * | |  |
 
 ### tab-item
 | option | description | type | acceptable values | default |

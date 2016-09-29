@@ -2,6 +2,14 @@
   "default": "en",
   "langs": [
     {
+      "value": "zh-cn2",
+      "text": "中文（Vue 2.0 版）"
+    },
+    {
+      "value": "en2",
+      "text": "English (for Vue 2.0)"
+    },
+    {
       "value": "zh-cn",
       "text": "中文"
     },

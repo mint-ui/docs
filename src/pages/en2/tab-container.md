@@ -18,15 +18,15 @@ Vue.component(TabContainerItem.name, TabContainerItem);
 Only the `<mt-tab-container-item>` whose `id` equals the `active` attribute in `mt-tab-container` will be displayed.
 
 ```html
-<mt-tab-container :active.sync="active">
+<mt-tab-container v-model="active">
   <mt-tab-container-item id="tab-container1">
-    <mt-cell v-for="n in 10" :title="'tab-container1 ' + $index"></mt-cell>
+    <mt-cell v-for="n in 10" title="tab-container 1"></mt-cell>
   </mt-tab-container-item>
   <mt-tab-container-item id="tab-container2">
-    <mt-cell v-for="n in 5" :title="'tab-container2 ' + $index"></mt-cell>
+    <mt-cell v-for="n in 5" title="tab-container 2"></mt-cell>
   </mt-tab-container-item>
   <mt-tab-container-item id="tab-container3">
-    <mt-cell v-for="n in 7" :title="'tab-container3 ' + $index"></mt-cell>
+    <mt-cell v-for="n in 7" title="tab-container 3"></mt-cell>
   </mt-tab-container-item>
 </mt-tab-container>
 ```
@@ -36,7 +36,7 @@ Only the `<mt-tab-container-item>` whose `id` equals the `active` attribute in `
 
 | option | description | type | acceptable values | default |
 |------|-------|---------|-------|--------|
-| active | the `id` of the active tab | * | | |
+| value | the `id` of the active tab | * | | |
 | swipeable | swipe effect | Boolean | | false |
 
 ### tab-container-item
