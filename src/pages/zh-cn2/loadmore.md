@@ -63,16 +63,16 @@ loadBottom(id) {
     data() {
       return {
         topStatus: '',
-        ...
+        // ...
       };
     },
     methods: {
       handleTopChange(status) {
         this.topStatus = status;
       },
-      ...
+      // ...
     },
-    ...
+    // ...
   };
 </script>
 ```

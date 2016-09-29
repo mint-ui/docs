@@ -18,7 +18,7 @@ Vue.component(TabItem.name, TabItem);
 搭配 <a v-link="{path:'/' + $route.language + '/tab-container'}">tab-container</a> 组件使用
 
 ```html
-<mt-tabbar :selected.sync="selected">
+<mt-tabbar v-model="selected">
   <mt-tab-item id="外卖">
     <img slot="icon" src="../assets/100x100.png">
     外卖
@@ -44,7 +44,7 @@ Vue.component(TabItem.name, TabItem);
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 |------|-------|---------|-------|--------|
 | fixed | 固定在页面底部 | Boolean | | false |
-| selected | 返回当前选中的 tab-item 的 id | * | |  |
+| value | 返回当前选中的 tab-item 的 id | * | |  |
 
 
 ### tab-item

@@ -15,12 +15,12 @@ Vue.component(Switch.name, Switch);
 ## 例子
 
 ```html
-<mt-switch :value.sync="value"></mt-switch>
+<mt-switch v-model="value"></mt-switch>
 ```
 
 带显示内容
 ```html
-<mt-switch :value.sync="value">开关</mt-switch>
+<mt-switch v-model="value">开关</mt-switch>
 ```
 
 ## API

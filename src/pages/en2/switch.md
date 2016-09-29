@@ -15,13 +15,13 @@ Vue.component(Switch.name, Switch);
 ## Usage
 
 ```html
-<mt-switch :value.sync="value"></mt-switch>
+<mt-switch v-model="value"></mt-switch>
 ```
 
 With extra text
 
 ```html
-<mt-switch :value.sync="value">Switch</mt-switch>
+<mt-switch v-model="value">Switch</mt-switch>
 ```
 
 ## API

@@ -26,7 +26,7 @@ Vue.component(Cell.name, Cell);
 ```html
 <mt-cell
   title="标题文字"
-  href="//github.com"
+  to="//github.com"
   is-link
   value="带链接">
 </mt-cell>
@@ -66,9 +66,10 @@ Vue.component(Cell.name, Cell);
 |------|-------|---------|-------|--------|
 |   icon  |  图标   | String    |  back, more   |     |
 | title | 标题 | String | | |
-| value | 内容 | String | | |
+| to    | 跳转链接 | String | | |
+| value | 内容 | * | | |
 | label | 备注信息，显示在标题下方 | String | | |
-| is-link | 链接，会显示箭头图标。搭配 href 属性使用 | Boolean | | |
+| is-link | 链接，会显示箭头图标。搭配 to 属性使用 | Boolean | | |
 
 ## Slot
 | name | 描述 |

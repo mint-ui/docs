@@ -18,7 +18,7 @@ Vue.component(Radio.name, Radio);
 ```html
 <mt-radio
   title="单选框列表"
-  :value.sync="value"
+  v-model="value"
   :options="['选项A', '选项B', '选项C']">
 </mt-radio>
 ```
@@ -46,7 +46,7 @@ this.options = [
 ```html
 <mt-radio
   title="单选框列表"
-  :value.sync="value"
+  v-model="value"
   :options="options">
 </mt-radio>
 ```
@@ -56,7 +56,7 @@ this.options = [
 <mt-radio
   align="right"
   title="右对齐"
-  :value.sync="value"
+  v-model="value"
   :options="options">
 </mt-radio>
 ```

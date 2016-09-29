@@ -24,7 +24,9 @@ Vue.component(Header.name, Header);
 
 ```html
 <mt-header title="标题过长会隐藏后面的内容啊哈哈哈哈">
-  <mt-button v-link="'/'" icon="back" slot="left">返回</mt-button>
+  <router-link to="/" slot="left">
+    <mt-button icon="back">返回</mt-button>
+  </router-link>
   <mt-button icon="more" slot="right"></mt-button>
 </mt-header>
 ```
@@ -33,10 +35,10 @@ Vue.component(Header.name, Header);
 
 ```html
 <mt-header title="多个按钮">
-  <div slot="left">
-    <mt-button v-link="'/'" icon="back">返回</mt-button>
+  <router-link to="/" slot="left">
+    <mt-button icon="back">返回</mt-button>
     <mt-button @click="handleClose">关闭</mt-button>
-  </div>
+  </router-link>
   <mt-button icon="more" slot="right"></mt-button>
 </mt-header>
 ```

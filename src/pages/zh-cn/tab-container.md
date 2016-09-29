@@ -18,7 +18,7 @@ Vue.component(TabContainerItem.name, TabContainerItem);
 改变 ative 的值，与 `<tab-container-item>` 的 id 一致即显示对应页面。
 
 ```html
-<mt-tab-container style="page-tabbar-tab-container" :active.sync="active">
+<mt-tab-container :active.sync="active">
   <mt-tab-container-item id="tab-container1">
     <mt-cell v-for="n in 10" :title="'tab-container1 ' + $index"></mt-cell>
   </mt-tab-container-item>

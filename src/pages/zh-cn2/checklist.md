@@ -18,7 +18,7 @@ Vue.component(Checklist.name, Checklist);
 ```html
 <mt-checklist
   title="复选框列表"
-  :value.sync="value"
+  v-model="value"
   :options="['选项A', '选项B', '选项C']">
 </mt-checklist>
 ```
@@ -49,7 +49,7 @@ this.options = [
 
 ```html
 <mt-checklist
-  :value.sync="value"
+  v-model="value"
   :options="options">
 </mt-checklist>
 ```
@@ -58,7 +58,7 @@ this.options = [
 ```html
 <mt-checklist
   :max="2"
-  :value.sync="value"
+  v-model="value"
   :options="options">
 </mt-checklist>
 ```
@@ -68,7 +68,7 @@ this.options = [
 <mt-checklist
   align="right"
   title="右对齐"
-  :value.sync="value"
+  v-model="value"
   :options="options">
 </mt-checklist>
 ```
