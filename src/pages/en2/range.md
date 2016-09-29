@@ -17,14 +17,14 @@ Vue.component(Range.name, Range);
 Sync `value` with one of your vue instance variables
 
 ```html
-<mt-range :value.sync="rangeValue"></mt-range>
+<mt-range v-model="rangeValue"></mt-range>
 ```
 
 More configurable options
 
 ```html
 <mt-range
-  :value.sync="rangeValue"
+  v-model="rangeValue"
   :min="10"
   :max="90"
   :step="10"
@@ -35,7 +35,7 @@ More configurable options
 Show texts on both sides of `mt-range`
 
 ```html
-<mt-range :value.sync="rangeValue">
+<mt-range v-model="rangeValue">
   <div slot="start">0</div>
   <div slot="end">100</div>
 </mt-range>

@@ -19,7 +19,7 @@ Basic usage
 ```html
 <mt-radio
   title="radio list"
-  :value.sync="value"
+  v-model="value"
   :options="['optionA', 'optionB', 'optionC']">
 </mt-radio>
 ```
@@ -47,7 +47,7 @@ this.options = [
 ```html
 <mt-radio
   title="radio list"
-  :value.sync="value"
+  v-model="value"
   :options="options">
 </mt-radio>
 ```
@@ -57,7 +57,7 @@ Alignment of the radio
 ```html
 <mt-radio
   align="right"
-  :value.sync="value"
+  v-model="value"
   :options="options">
 </mt-radio>
 ```

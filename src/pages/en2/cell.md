@@ -26,7 +26,7 @@ Clickable link
 ```html
 <mt-cell
   title="标题文字"
-  href="//github.com"
+  to="//github.com"
   is-link
   value="带链接">
 </mt-cell>
@@ -68,9 +68,10 @@ With description
 |------|-------|---------|-------|--------|
 |   icon  |  cell icon   | String    |  back, more   |     |
 | title | title of the cell | String | | |
-| value | content of the cell | String | | |
+| to    | link | String | | |
+| value | content of the cell | * | | |
 | label | a description shown underneath the title | String | | |
-| is-link | if the cell is a link, works with the href attribute | Boolean | | |
+| is-link | if the cell is a link, works with the to attribute | Boolean | | |
 
 ## Slot
 | name | description |

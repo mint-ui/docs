@@ -7,9 +7,9 @@
   </head>
   <body>
     <app></app>
-    <script src="//github.elemecdn.com/uglifyjs!vuejs/vue/v1.0.24/dist/vue.js"></script>
-    <script src="//github.elemecdn.com/uglifyjs!vuejs/vue-router/v0.7.13/dist/vue-router.js"></script>
     <% if (process.env.NODE_ENV === 'production') { %>
+    <script src="//cdn.jsdelivr.net/vue/1.0.28/vue.min.js"></script>
+    <script src="//cdn.jsdelivr.net/vue.router/2.0.0-rc.5/vue-router.min.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

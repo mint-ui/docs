@@ -16,7 +16,7 @@ Vue.component(TabItem.name, TabItem);
 ## Usage
 
 ```html
-<mt-tabbar :selected.sync="selected">
+<mt-tabbar v-model="selected">
   <mt-tab-item id="tab1">
     <img slot="icon" src="../assets/100x100.png">
     tab1
@@ -42,7 +42,7 @@ Vue.component(TabItem.name, TabItem);
 | option | description | type | acceptable values | default |
 |------|-------|---------|-------|--------|
 | fixed | if the tab bar is fixed on bottom | Boolean | | false |
-| selected | id of the selected tab item | * | |  |
+| value | id of the selected tab item | * | |  |
 
 
 ### tab-item

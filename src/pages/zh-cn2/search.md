@@ -16,13 +16,13 @@ Vue.component(Search.name, Search);
 
 基础用法
 ```html
-<mt-search :value.sync="value"></mt-search>
+<mt-search v-model="value"></mt-search>
 ```
 
 设置显示文字
 ```html
 <mt-search
-  :value.sync="value"
+  v-model="value"
   cancel-text="取消"
   placeholder="搜索">
 </mt-search>
@@ -30,12 +30,12 @@ Vue.component(Search.name, Search);
 
 带搜索结果
 ```html
-<mt-search :value.sync="value" :result.sync="result"></mt-search>
+<mt-search v-model="value" :result.sync="result"></mt-search>
 ```
 
 自定义搜索结果
 ```html
-<mt-search :value.sync="value">
+<mt-search v-model="value">
   <mt-cell
     v-for="item in result"
     :title="item.title"

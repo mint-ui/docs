@@ -17,14 +17,14 @@ Vue.component(Search.name, Search);
 Basic usage
 
 ```html
-<mt-search :value.sync="value"></mt-search>
+<mt-search v-model="value"></mt-search>
 ```
 
 Configure texts
 
 ```html
 <mt-search
-  :value.sync="value"
+  v-model="value"
   cancel-text="取消"
   placeholder="搜索">
 </mt-search>
@@ -32,12 +32,12 @@ Configure texts
 
 Display searching result
 ```html
-<mt-search :value.sync="value" :result.sync="result"></mt-search>
+<mt-search v-model="value" :result.sync="result"></mt-search>
 ```
 
 Custom the display of the searching result list
 ```html
-<mt-search :value.sync="value">
+<mt-search v-model="value">
   <mt-cell
     v-for="item in result"
     :title="item.title"

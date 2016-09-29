@@ -45,14 +45,14 @@ Ghost button
 With icon
 ```html
 <mt-button icon="back">back</mt-button>
-<mt-button icon="more">更多</mt-button>
+<mt-button icon="more">more</mt-button>
 ```
 
 With custom icon
 ```html
 <mt-button>
   <img src="../assets/100x100.png" height="20" width="20" slot="icon">
-  带自定义图标
+  icon
 </mt-button>
 ```
 

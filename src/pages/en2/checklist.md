@@ -19,7 +19,7 @@ Basic usage
 ```html
 <mt-checklist
   title="checkbox list"
-  :value.sync="value"
+  v-model="value"
   :options="['optionA', 'optionB', 'optionC']">
 </mt-checklist>
 ```
@@ -51,7 +51,7 @@ this.options = [
 
 ```html
 <mt-checklist
-  :value.sync="value"
+  v-model="value"
   :options="options">
 </mt-checklist>
 ```
@@ -61,7 +61,7 @@ Configure the maximum amount of checked options
 ```html
 <mt-checklist
   :max="2"
-  :value.sync="value"
+  v-model="value"
   :options="options">
 </mt-checklist>
 ```
@@ -71,7 +71,7 @@ Alignment of the check box
 ```html
 <mt-checklist
   align="right"
-  :value.sync="value"
+  v-model="value"
   :options="options">
 </mt-checklist>
 ```

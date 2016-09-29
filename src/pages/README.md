@@ -7,4 +7,13 @@
     margin-bottom: 20px;
   }
 </style>
-<a class="button-language" v-link="{path: '/' + item.value}" v-for="item in $route.langs" v-text="item.text + ($route.default_lang.text === item.text ? ' (default)' : '')"></a>
+
+<ul>
+  <li v-for="item in $route.langs">
+    <a
+      class="button-language"
+      v-link="{path: '/' + item.value}">
+        {{ item.text + ($route.default_lang.text === item.text ? ' (default)' : '') }}
+      </a>
+  </li>
+</ul>
