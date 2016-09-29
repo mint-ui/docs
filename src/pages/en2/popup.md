@@ -16,11 +16,11 @@ Vue.component(Popup.name, Popup);
 
 `position` defines the location of the popup. If it's `bottom`, when you switch on the popup, it'll slide into the screen from the bottom and become fixed at the bottom. The sliding animation alters with `position`, and you don't need to configure it manually.
 
-Sync `visible` with one of your vue instance variables. Toggle it to switch on/off the popup.
+Bind `v-model` with one of your vue instance variables. Toggle it to switch on/off the popup.
 
 ```html
 <mt-popup
-  :visible.sync="popupVisible"
+  v-model="popupVisible"
   position="bottom">
   ...
 </mt-popup>
@@ -30,7 +30,7 @@ If the `position` attribute is omitted, the popup will be located at the center 
 
 ```html
 <mt-popup
-  :visible.sync="popupVisible"
+  v-model="popupVisible"
   popup-transition="popup-fade">
   ...
 </mt-popup>
@@ -39,7 +39,6 @@ If the `position` attribute is omitted, the popup will be located at the center 
 ## API
 | option | description | type | acceptable values | default |
 |------|-------|---------|-------|--------|
-| visible | visibility of the popup | Boolean | | false |
 | position | location of the popup. If omitted, the popup will be centered  | String | 'top'<br>'right'<br>'bottom'<br>'left' | |
 | pop-transition | CSS transition of the popup. Configurable only when `position` is omitted | String | 'popup-fade' | |
 | modal | if a modal pops with the popup | Boolean | | true |
