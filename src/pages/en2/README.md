@@ -5,7 +5,7 @@
 # Installation
 
 ```shell
-npm install mint-ui --save
+npm install mint-ui@next --save
 ```
 
 # Usage
