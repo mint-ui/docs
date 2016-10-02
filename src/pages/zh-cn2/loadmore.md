@@ -43,6 +43,8 @@ loadBottom(id) {
 ```
 唯一的区别是，当底部数据全部获取完毕时，可以将绑定到组件 `bottom-all-loaded` 属性的变量赋值为 `true`，这样 `bottom-method` 就不会再次执行了。
 
+手指在屏幕上滑动的距离与组件实际移动的距离比值可以通过 `distance-index` 参数配置，默认值为 2。
+
 ## 自定义 HTML 模板
 
 可以为列表顶部和底部的加载提示区域提供自定义的 HTML 模板
@@ -92,6 +94,7 @@ loadBottom(id) {
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 |------|-------|---------|-------|--------|
 | autoFill | 若为真，`loadmore` 会自动检测并撑满其容器 | Boolean | | true |
+| distanceIndex | 手指移动与组件移动距离的比值 | Number | | 2 |
 | topPullText | `topStatus` 为 `pull` 时加载提示区域的文字 | String | | '下拉刷新' |
 | topDropText | `topStatus` 为 `drop` 时加载提示区域的文字 | String | | '释放更新' |
 | topLoadingText | `topStatus` 为 `loading` 时加载提示区域的文字 | String | | '加载中...' |

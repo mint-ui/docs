@@ -43,6 +43,8 @@ loadBottom(id) {
 ```
 The only difference is that after all data are fetched, you can set `bottom-all-loaded` to `true` so that `bottom-method` will not run any more.
 
+The ratio between the distance that your finger moves and the distance that the component actually scrolls can be defined using `distance-index`, whose default value is 2。
+
 ## Custom HTML templates
 
 You can customize the top and bottom DOM using an HTML template
@@ -73,6 +75,7 @@ Upon loaded, `loadmore` will automatically check if it is tall enough to fill it
 | option | description | type | acceptable values | default |
 |------|-------|---------|-------|--------|
 | autoFill | if `true`, `loadmore` will check and fill its container | Boolean | | true |
+| distanceIndex | the ratio between the distance of the finger moves and the component scrolls | Number | | 2 |
 | topPullText | top text when the component is being pulled down | String | | '下拉刷新' |
 | topDropText | top text when the component is ready to drop | String | | '释放更新' |
 | topLoadingText | top text while `topMethod` is running | String | | '加载中...' |
