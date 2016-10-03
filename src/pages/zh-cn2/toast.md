@@ -36,6 +36,15 @@ Toast({
 });
 ```
 
+执行 `Toast` 方法会返回一个 `Toast` 实例，每个实例都有 `close` 方法，用于手动关闭 `Toast`
+
+```javascript
+let instance = Toast('提示信息');
+setTimeout(() => {
+  instance.close();
+}, 2000);
+```
+
 ## API
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 |------|-------|---------|-------|--------|

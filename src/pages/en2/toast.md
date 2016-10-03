@@ -36,6 +36,15 @@ Toast({
 });
 ```
 
+The `Toast` function returns a `Toast` instance, which has a `close` method to close the `Toast` manually.
+
+```javascript
+let instance = Toast('Upload Complete');
+setTimeout(() => {
+  instance.close();
+}, 2000);
+```
+
 ## API
 | option | description | type | acceptable values | default |
 |------|-------|---------|-------|--------|
