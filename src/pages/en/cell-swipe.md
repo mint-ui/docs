@@ -36,10 +36,9 @@ Add button group on the right
 |------|-------|---------|-------|--------|
 |   icon  |  cell icon   | String    |  back, more   |     |
 | title | title of the cell | String | | |
-| to    | link | String | | |
-| value | content of the cell | * | | |
+| value | content of the cell | String | | |
 | label | a description shown underneath the title | String | | |
-| is-link | if the cell is a link, works with the to attribute | Boolean | | |
+| is-link | if the cell is a link, works with the href attribute | Boolean | | |
 | left | button group, `{ content, style, handler }` | Object[] | |
 | right | button group, `{ content, style, handler }` | Object[] | |
 
