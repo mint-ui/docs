@@ -125,6 +125,11 @@ router.map({
     language: 'zh-cn2',
     component: resolve => require(['./pages/zh-cn2/cell.md'], resolve)
   },
+  '/zh-cn2/cell-swipe': {
+    title: 'Cell Swipe',
+    language: 'zh-cn2',
+    component: resolve => require(['./pages/zh-cn2/cell-swipe.md'], resolve)
+  },
   '/zh-cn2/spinner': {
     title: 'Spinner',
     language: 'zh-cn2',
@@ -269,6 +274,11 @@ router.map({
     title: 'Cell',
     language: 'en2',
     component: resolve => require(['./pages/en2/cell.md'], resolve)
+  },
+  '/en2/cell-swipe': {
+    title: 'Cell Swipe',
+    language: 'en2',
+    component: resolve => require(['./pages/en2/cell-swipe.md'], resolve)
   },
   '/en2/spinner': {
     title: 'Spinner',
@@ -415,6 +425,11 @@ router.map({
     language: 'zh-cn',
     component: resolve => require(['./pages/zh-cn/cell.md'], resolve)
   },
+  '/zh-cn/cell-swipe': {
+    title: 'Cell Swipe',
+    language: 'zh-cn',
+    component: resolve => require(['./pages/zh-cn/cell-swipe.md'], resolve)
+  },
   '/zh-cn/spinner': {
     title: 'Spinner',
     language: 'zh-cn',
@@ -559,6 +574,11 @@ router.map({
     title: 'Cell',
     language: 'en',
     component: resolve => require(['./pages/en/cell.md'], resolve)
+  },
+  '/en/cell-swipe': {
+    title: 'Cell Swipe',
+    language: 'en',
+    component: resolve => require(['./pages/en/cell-swipe.md'], resolve)
   },
   '/en/spinner': {
     title: 'Spinner',

@@ -71,7 +71,7 @@ With description
 | to    | link | String | | |
 | value | content of the cell | * | | |
 | label | a description shown underneath the title | String | | |
-| is-link | if the cell is a link, works with the to attribute | Boolean | | |
+| is-link | if the cell is a link, works with the `to` attribute | Boolean | | |
 
 ## Slot
 | name | description |

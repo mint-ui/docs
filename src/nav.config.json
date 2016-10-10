@@ -84,6 +84,10 @@
         "name": "Cell"
       },
       {
+        "path": "/cell-swipe",
+        "name": "Cell Swipe"
+      },
+      {
         "path": "/spinner",
         "name": "Spinner"
       },
