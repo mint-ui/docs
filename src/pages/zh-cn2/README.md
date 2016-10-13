@@ -6,7 +6,7 @@
 ## 安装
 
 ```shell
-npm install mint-ui@next -save
+npm install mint-ui -save
 ```
 
 ## 快速开始
