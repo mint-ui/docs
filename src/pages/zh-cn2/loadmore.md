@@ -100,7 +100,6 @@ loadBottom(id) {
 | topLoadingText | `topStatus` 为 `loading` 时加载提示区域的文字 | String | | '加载中...' |
 | topDistance | 触发 `topMethod` 的下拉距离阈值（像素） | Number | | 70 |
 | topMethod | 下拉刷新执行的方法 | Function | | |
-| top-status-change | 下拉刷新执行的方法 | Function | | |
 | bottomPullText | `bottomStatus` 为 `pull` 时加载提示区域的文字 | String | | '上拉刷新' |
 | bottomDropText | `bottomStatus` 为 `drop` 时加载提示区域的文字 | String | | '释放更新' |
 | bottomLoadingText | `bottomStatus` 为 `loading` 时加载提示区域的文字 | String | | '加载中...' |

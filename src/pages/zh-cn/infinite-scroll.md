@@ -18,7 +18,7 @@ Vue.use(InfiniteScroll);
 
 ```html
 <ul
-  v-infinite-scroll="loadMore()"
+  v-infinite-scroll="loadMore"
   infinite-scroll-disabled="loading"
   infinite-scroll-distance="10">
   <li v-for="item in list">{{ item }}</li>
