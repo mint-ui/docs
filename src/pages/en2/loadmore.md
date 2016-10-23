@@ -76,6 +76,7 @@ Upon loaded, `loadmore` will automatically check if it is tall enough to fill it
 |------|-------|---------|-------|--------|
 | autoFill | if `true`, `loadmore` will check and fill its container | Boolean | | true |
 | distanceIndex | the ratio between the distance of the finger moves and the component scrolls | Number | | 2 |
+| maxDistance | maximum distance(in pixel) the component can scroll. Can be disabled by setting it to 0 | Number | | 0 |
 | topPullText | top text when the component is being pulled down | String | | '下拉刷新' |
 | topDropText | top text when the component is ready to drop | String | | '释放更新' |
 | topLoadingText | top text while `topMethod` is running | String | | '加载中...' |

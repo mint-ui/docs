@@ -95,6 +95,7 @@ loadBottom(id) {
 |------|-------|---------|-------|--------|
 | autoFill | 若为真，`loadmore` 会自动检测并撑满其容器 | Boolean | | true |
 | distanceIndex | 手指移动与组件移动距离的比值 | Number | | 2 |
+| maxDistance | 组件可移动的最大距离（像素），若为 0 则不限制 | Number | | 0 |
 | topPullText | `topStatus` 为 `pull` 时加载提示区域的文字 | String | | '下拉刷新' |
 | topDropText | `topStatus` 为 `drop` 时加载提示区域的文字 | String | | '释放更新' |
 | topLoadingText | `topStatus` 为 `loading` 时加载提示区域的文字 | String | | '加载中...' |

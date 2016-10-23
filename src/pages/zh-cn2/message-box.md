@@ -68,5 +68,6 @@ MessageBox.prompt('请输入姓名').then(({ value, action }) => {
 | cancelButtonHighlight | 是否将取消按钮的文本加粗显示 | Boolean | | false |
 | cancelButtonClass | 取消按钮的类名 | String | | |
 | showInput | 是否显示一个输入框 | Boolean | | false |
+| inputType | 输入框的类型 | String | | 'text' |
 | inputValue | 输入框的值 | String | | |
 | inputPlaceholder | 输入框的占位符 | String | | |
