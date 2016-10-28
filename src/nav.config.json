@@ -57,6 +57,11 @@
       {
         "path": "/index-list",
         "name": "Index List"
+      },
+      {
+        "path": "/palette-button",
+        "name": "Palette Button (2.0)",
+        "only": ["zh-cn2", "en2"]
       }
     ]
   },

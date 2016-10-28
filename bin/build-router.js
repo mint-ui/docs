@@ -31,6 +31,10 @@ router.map({
   {{map}}
 });
 
+router.redirect({
+  '*': '/'
+});
+
 router.beforeEach(transition => {
   document.title = transition.to.title || document.title;
   transition.next();
@@ -55,6 +59,7 @@ var getPages = function(lang) {
   var pages = [];
 
   NAVS_CONFIG.map(nav => nav.list.map(page => {
+    if (page.only && page.only.indexOf(lang) === -1) return;
     pages.push({
       path: `/${lang}${page.path}`,
       language: lang,
@@ -86,7 +91,7 @@ LANG_CONFIG.langs.forEach(lang => {
   map = map.concat(getPages(lang.value));
 });
 
-var tempalte = map.map(item => render(ITEM_TEMPLATE, item)).join(',\n  ');
+var template = map.map(item => render(ITEM_TEMPLATE, item)).join(',\n  ');
 
-fs.writeFileSync(OUTPUT_PATH, renderRouter(tempalte));
+fs.writeFileSync(OUTPUT_PATH, renderRouter(template));
 console.log('router file done');

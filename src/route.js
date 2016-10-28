@@ -100,6 +100,11 @@ router.map({
     language: 'zh-cn2',
     component: resolve => require(['./pages/zh-cn2/index-list.md'], resolve)
   },
+  '/zh-cn2/palette-button': {
+    title: 'Palette Button',
+    language: 'zh-cn2',
+    component: resolve => require(['./pages/zh-cn2/palette-button.md'], resolve)
+  },
   '/zh-cn2/header': {
     title: 'Header',
     language: 'zh-cn2',
@@ -249,6 +254,11 @@ router.map({
     title: 'Index List',
     language: 'en2',
     component: resolve => require(['./pages/en2/index-list.md'], resolve)
+  },
+  '/en2/palette-button': {
+    title: 'Palette Button',
+    language: 'en2',
+    component: resolve => require(['./pages/en2/palette-button.md'], resolve)
   },
   '/en2/header': {
     title: 'Header',
@@ -620,6 +630,10 @@ router.map({
     language: 'en',
     component: resolve => require(['./pages/en/badge.md'], resolve)
   }
+});
+
+router.redirect({
+  '*': '/'
 });
 
 router.beforeEach(transition => {
