@@ -101,7 +101,7 @@ router.map({
     component: resolve => require(['./pages/zh-cn2/index-list.md'], resolve)
   },
   '/zh-cn2/palette-button': {
-    title: 'Palette Button',
+    title: 'Palette Button (2.0)',
     language: 'zh-cn2',
     component: resolve => require(['./pages/zh-cn2/palette-button.md'], resolve)
   },
@@ -256,7 +256,7 @@ router.map({
     component: resolve => require(['./pages/en2/index-list.md'], resolve)
   },
   '/en2/palette-button': {
-    title: 'Palette Button',
+    title: 'Palette Button (2.0)',
     language: 'en2',
     component: resolve => require(['./pages/en2/palette-button.md'], resolve)
   },
