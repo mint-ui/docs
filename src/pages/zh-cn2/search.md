@@ -53,6 +53,7 @@ Vue.component(Search.name, Search);
 |cancel-text | 取消按钮文字 | String | | 取消 |
 |placeholder | 搜索框占位内容  | String | | 搜索 |
 | result | 搜索结果列表 | Array | | |
+| autofocus | 自动聚焦 | Boolean | - | false |
 
 ## Slot
 

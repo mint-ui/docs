@@ -56,6 +56,7 @@ Custom the display of the searching result list
 |cancel-text | text of the cancel button | String | | '取消' |
 |placeholder | place holder for the search bar  | String | | '搜索' |
 | result | the searching result list | Array | | |
+| autofocus | auto focus input | Boolean | - | false |
 
 ## Slot
 
