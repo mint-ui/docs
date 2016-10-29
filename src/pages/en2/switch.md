@@ -29,6 +29,11 @@ With extra text
 |------|-------|---------|-------|--------|
 | value | value of the switch | Boolean | | |
 
+## Event
+| name | return |
+| ---- | ----- |
+| change | checked: Boolean |
+
 ## Slot
 
 | name | description |

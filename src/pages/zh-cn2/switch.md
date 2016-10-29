@@ -28,6 +28,11 @@ Vue.component(Switch.name, Switch);
 |------|-------|---------|-------|--------|
 | value | 绑定值 | Boolean | | |
 
+## Event
+| 名称 | 返回值 |
+| ---- | ----- |
+| change | checked: Boolean |
+
 ## Slot
 
 | name | 描述 |
