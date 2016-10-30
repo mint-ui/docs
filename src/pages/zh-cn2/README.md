@@ -1,76 +1,61 @@
 # Mint UI 使用文档
 
+本文将介绍 Mint UI 的安装方式和基本的用法。
+
 ---------
 
 
-## 安装
+### npm 安装
+推荐使用 npm 的方式安装，它能更好地和 [webpack](https://webpack.js.org/) 打包工具配合使用。
 
 ```shell
-npm install mint-ui -save
+npm i mint-ui -S
 ```
 
-## 快速开始
+### CDN
+目前可以通过 [unpkg.com/mint-ui](https://unpkg.com/mint-ui/) 获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。
 
-引入全部组件
-```javascript
-import Vue from 'vue';
-import MintUI from 'mint-ui';
-import 'mint-ui/lib/style.css';
-
-Vue.use(MintUI);
-```
-
-只引入需要的组件
-```javascript
-import Cell from 'mint-ui/lib/cell';
-import 'mint-ui/lib/cell/style.css';
-
-import Button from 'mint-ui/lib/button';
-import 'mint-ui/lib/button/style.css';
-
-Vue.component(Cell.name, Cell);
-Vue.component(Button.name, Button);
+```html
+<!-- 引入样式 -->
+<link rel="stylesheet" href="https://unpkg.com/mint-ui/lib/style.css">
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/mint-ui/lib/index.js"></script>
 ```
 
 
-### 使用 [babel-plugin-component](https://github.com/QingWei-Li/babel-plugin-component) 可以自动导入样式文件及按需加载
+### Hello world
+通过 CDN 的方式我们可以很容易地使用 Mint UI 写出一个 Hello world 页面。
 
-自动引入样式
-```javascript
-import Vue from 'vue';
-import MintUI from 'mint-ui';
-
-Vue.use(MintUI);
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- 引入样式 -->
+  <link rel="stylesheet" href="https://unpkg.com/mint-ui/lib/style.css">
+</head>
+<body>
+  <div id="app">
+    <mt-button @click.native="handleClick">按钮</mt-button>
+  </div>
+</body>
+  <!-- 先引入 Vue -->
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <!-- 引入组件库 -->
+  <script src="https://unpkg.com/mint-ui/lib/index.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      methods: {
+        handleClick: function() {
+          this.$toast('Hello world!')
+        }
+      }
+    })
+  </script>
+</html>
 ```
+<iframe width="100%" height="300" src="//jsfiddle.net/cinwell_li/Lr75y28t/1/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-按需加载
-```javascript
-import Vue from 'vue';
-import { Cell, Button } from 'mint-ui';
 
-Vue.component(Cell.name, Cell);
-Vue.component(Button.name, Button);
-```
-
-将会被翻译成
-```javascript
-var Vue = require('vue');
-var Cell = require('mint-ui/lib/cell');
-require('mint-ui/lib/cell/style.css');
-
-var Button = require('mint-ui/lib/button');
-require('mint-ui/lib/button/style.css');
-
-Vue.component(Cell.name, Cell);
-Vue.component(Button.name, Button);
-```
-
-### babel-plugin-component 配置
-.babelrc
-```json
-{
-  "plugins": ["other-plugin", ["component", [
-    { "libraryName": "mint-ui", "style": true }
-  ]]]
-}
-```
+如果是通过 npm 安装，并希望配合 webpack 使用，请阅读下一节：<a v-link="'/zh-cn2/quickstart'">快速上手</a>。

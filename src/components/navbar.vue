@@ -5,6 +5,13 @@
         <a
           class="nav-link"
           v-link="{ path: '/' + ($route.language || $route.default_lang.value), activeClass: 'is-active', exact: true }">Overview</a>
+      </li>
+      <li>
+        <a
+          class="nav-link"
+          v-link="{ path: '/' + ($route.language || $route.default_lang.value) + '/quickstart', activeClass: 'is-active', exact: true }">Quickstart</a>
+      </li>
+      <li>
         <a
           class="nav-link"
           v-link="{ path: '/' + ($route.language || $route.default_lang.value) + '/repositories', activeClass: 'is-active', exact: true }">Repositories</a>
