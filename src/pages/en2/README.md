@@ -1,83 +1,72 @@
 # Mint UI documentation
 
+This part introduces installation and basic usage of Mint UI.
+
 -------------
-
-# Installation
+### npm
+Installing with npm is recommended, for it works seamlessly with [webpack](https://webpack.js.org/).
 
 ```shell
-npm install mint-ui --save
+npm i mint-ui -S
 ```
 
-# Usage
+### CDN
+Get the latest version from [unpkg.com/mint-ui](https://unpkg.com/mint-ui/), and import JavaScript and CSS file in your page.
 
-Import all components
-
-```javascript
-import Vue from 'vue';
-import MintUI from 'mint-ui';
-import 'mint-ui/lib/style.css';
-
-Vue.use(MintUI);
-```
-
-Or import on demand
-
-```javascript
-import Cell from 'mint-ui/lib/cell';
-import 'mint-ui/lib/cell/style.css';
-
-import Button from 'mint-ui/lib/button';
-import 'mint-ui/lib/button/style.css';
-
-Vue.component(Cell.name, Cell);
-Vue.component(Button.name, Button);
-```
-
-## Use [babel-plugin-component](https://github.com/QingWei-Li/babel-plugin-component)
-
-Style sheet will be automatically imported
-
-```javascript
-import Vue from 'vue';
-import MintUI from 'mint-ui';
-
-Vue.use(MintUI);
-```
-
-import on demand
-```javascript
-import Vue from 'vue';
-import { Cell, Button } from 'mint-ui';
-
-Vue.component(Cell.name, Cell);
-Vue.component(Button.name, Button);
-```
-
-Equals to
-```javascript
-var Vue = require('vue');
-var Cell = require('mint-ui/lib/cell');
-require('mint-ui/lib/cell/style.css');
-
-var Button = require('mint-ui/lib/button');
-require('mint-ui/lib/button/style.css');
-
-Vue.component(Cell.name, Cell);
-Vue.component(Button.name, Button);
-```
-
-## Install `babel-plugin-component`
-```shell
-npm i babel-plugin-component -D
-```
-
-Configure .babelrc like this
-```json
-{
-  "plugins": ["other-plugin", ["component", [
-    { "libraryName": "mint-ui", "style": true }
-  ]]]
-}
+```html
+<!-- import CSS -->
+<link rel="stylesheet" href="https://unpkg.com/mint-ui/lib/style.css">
+<!-- import JavaScript -->
+<script src="https://unpkg.com/mint-ui/lib/index.js"></script>
 ```
 
 
+### Hello world
+If you are using CDN, a Hello world page is easy to code with Mint UI.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- import CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/mint-ui/lib/style.css">
+</head>
+<body>
+  <div id="app">
+    <mt-button @click.native="handleClick">Button</mt-button>
+  </div>
+</body>
+  <!-- import Vue before Mint UI -->
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <!-- import JavaScript -->
+  <script src="https://unpkg.com/mint-ui/lib/index.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      methods: {
+        handleClick: function() {
+          this.$toast('Hello world!')
+        }
+      }
+    })
+  </script>
+</html>
+```
+<iframe width="100%" height="300" src="//jsfiddle.net/leopoldthecuber/jd6on9vr/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+If you are using npm and wish to apply webpack, please continue to the next page: <a v-link="'/en2/quickstart'">Quick Start</a>。
+
+<br>
+
+**About event handlers**
+
+In Vue 2.0, to listen for a native DOM event on a component, you'll need to use the `.native` modifier:
+```html
+<my-component @click.native="handleClick">Click Me</my-component>
+```
+For the sake of usability, we handled the `Button` component so that it can listen to `click` events:
+```html
+<mt-button @click="handleButtonClick">Click Me</mt-button>
+```
+But for other components, the `.native` modifier is still required.
