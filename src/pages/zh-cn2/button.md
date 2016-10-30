@@ -55,6 +55,11 @@ Vue.component(Button.name, Button);
 </mt-button>
 ```
 
+绑定 click 事件
+```html
+<mt-button @click.native="handleClick">点击触发 handleClick</mt-button>
+```
+
 ## API
 
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |

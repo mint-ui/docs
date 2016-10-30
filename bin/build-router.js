@@ -88,6 +88,13 @@ LANG_CONFIG.langs.forEach(lang => {
     componentPath: `./pages/${lang.value}/repositories.md`
   });
 
+  map.push({
+    title: '快速上手',
+    path: `/${lang.value}/quickstart`,
+    language: lang.value,
+    componentPath: `./pages/${lang.value}/quickstart.md`
+  });
+
   map = map.concat(getPages(lang.value));
 });
 

@@ -30,6 +30,11 @@ router.map({
     language: 'zh-cn2',
     component: resolve => require(['./pages/zh-cn2/repositories.md'], resolve)
   },
+  '/zh-cn2/quickstart': {
+    title: '快速上手',
+    language: 'zh-cn2',
+    component: resolve => require(['./pages/zh-cn2/quickstart.md'], resolve)
+  },
   '/zh-cn2/toast': {
     title: 'Toast',
     language: 'zh-cn2',
@@ -184,6 +189,11 @@ router.map({
     title: '子项目',
     language: 'en2',
     component: resolve => require(['./pages/en2/repositories.md'], resolve)
+  },
+  '/en2/quickstart': {
+    title: '快速上手',
+    language: 'en2',
+    component: resolve => require(['./pages/en2/quickstart.md'], resolve)
   },
   '/en2/toast': {
     title: 'Toast',
@@ -340,6 +350,11 @@ router.map({
     language: 'zh-cn',
     component: resolve => require(['./pages/zh-cn/repositories.md'], resolve)
   },
+  '/zh-cn/quickstart': {
+    title: '快速上手',
+    language: 'zh-cn',
+    component: resolve => require(['./pages/zh-cn/quickstart.md'], resolve)
+  },
   '/zh-cn/toast': {
     title: 'Toast',
     language: 'zh-cn',
@@ -489,6 +504,11 @@ router.map({
     title: '子项目',
     language: 'en',
     component: resolve => require(['./pages/en/repositories.md'], resolve)
+  },
+  '/en/quickstart': {
+    title: '快速上手',
+    language: 'en',
+    component: resolve => require(['./pages/en/quickstart.md'], resolve)
   },
   '/en/toast': {
     title: 'Toast',

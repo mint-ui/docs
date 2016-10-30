@@ -73,6 +73,10 @@
     }
   }
 
+  .content {
+    padding-bottom: 2em;
+  }
+
   .navbar {
     min-width: 140px;
     padding-left: 0;
