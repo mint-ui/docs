@@ -54,6 +54,7 @@ Vue.component(Search.name, Search);
 |placeholder | 搜索框占位内容  | String | | 搜索 |
 | result | 搜索结果列表 | Array | | |
 | autofocus | 自动聚焦 | Boolean | - | false |
+| show | 始终显示搜索列表 | Boolean | - | false |
 
 ## Slot
 
