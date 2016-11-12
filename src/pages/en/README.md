@@ -54,4 +54,4 @@ If you are using CDN, a Hello world page is easy to code with Mint UI.
 </html>
 ```
 
-If you are using npm and wish to apply webpack, please continue to the next page: <a v-link="'/en/quickstart'">Quick Start</a>。
+If you are using npm and wish to apply webpack, please continue to the next page: <a v-link="'/en/quickstart'">Quick Start</a>.

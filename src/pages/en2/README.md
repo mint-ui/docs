@@ -55,7 +55,7 @@ If you are using CDN, a Hello world page is easy to code with Mint UI.
 ```
 <iframe width="100%" height="300" src="//jsfiddle.net/leopoldthecuber/jd6on9vr/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-If you are using npm and wish to apply webpack, please continue to the next page: <a v-link="'/en2/quickstart'">Quick Start</a>。
+If you are using npm and wish to apply webpack, please continue to the next page: <a v-link="'/en2/quickstart'">Quick Start</a>.
 
 <br>
 
