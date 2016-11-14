@@ -57,6 +57,7 @@ Custom the display of the searching result list
 |placeholder | place holder for the search bar  | String | | '搜索' |
 | result | the searching result list | Array | | |
 | autofocus | auto focus input | Boolean | - | false |
+| show | show search list | Boolean | - | false |
 
 ## Slot
 
