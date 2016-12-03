@@ -71,7 +71,7 @@ The `slots` array is made up of objects. Each object represents a slot
 |------|--------|
 | divider | if the corresponding slot is a divider |
 | content | the text of the divider slot |
-| values | array of acceptable values of the corresponding slot |
+| values | array of acceptable values of the corresponding slot. If it is an object array, you'll need to specify `value-key` on the `mt-picker` tag to assign displayed text |
 | defaultIndex | the index of the default picked value for the corresponding slot. Default is 0 |
 | textAlign | alignment of the corresponding slot |
 | flex | value of CSS `flex` for the corresponding slot |
@@ -81,6 +81,7 @@ The `slots` array is made up of objects. Each object represents a slot
 | option | description | type | acceptable values | default |
 |------|-------|---------|-------|--------|
 | slots | the object array for slots | Array | | [] |
+| valueKey | when `values` is an object array, `valueKey` tells Picker which key is for text display | String | | '' |
 | showToolbar | if a toolbar is shown above the slots. Its content can be customized | Boolean | | false |
 | visibleItemCount | the amount of visible values in each slot | Number | | 5 |
 

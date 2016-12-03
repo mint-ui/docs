@@ -25,20 +25,20 @@ Vue.component(Loadmore.name, Loadmore);
 以列表顶部的下拉刷新为例：按住列表，下拉一定距离（通过 `topDistance` 配置）后释放，被指定为 `top-method` 的方法就会执行
 
 ```javascript
-loadTop(id) {
+loadTop() {
   ...// 加载更多数据
-  this.$refs.loadmore.onTopLoaded(id);
+  this.$refs.loadmore.onTopLoaded();
 }
 ```
-注意在这个方法的最后需要手动调用 `loadmore` 的 `onTopLoaded` 事件，参数为 `id`。这是因为在加载数据后需要对组件进行一些重新定位的操作，`id` 参数能够避免在同一页面有多个 `loadmore` 实例时互相干扰。
+注意在这个方法的最后需要手动调用 `loadmore` 的 `onTopLoaded` 事件。这是因为在加载数据后需要对组件进行一些重新定位的操作。
 
 列表底部的上拉刷新与之类似
 
 ```javascript
-loadBottom(id) {
+loadBottom() {
   ...// 加载更多数据
   this.allLoaded = true;// 若数据已全部获取完毕
-  this.$refs.loadmore.onBottomLoaded(id);
+  this.$refs.loadmore.onBottomLoaded();
 }
 ```
 唯一的区别是，当底部数据全部获取完毕时，可以将绑定到组件 `bottom-all-loaded` 属性的变量赋值为 `true`，这样 `bottom-method` 就不会再次执行了。

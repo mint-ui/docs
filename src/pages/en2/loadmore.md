@@ -25,20 +25,20 @@ Vue.component(Loadmore.name, Loadmore);
 Take upward direction for example: pull the component `topDistance` pixels away from the top and then release it, the function you appointed as `top-method` will run
 
 ```javascript
-loadTop(id) {
+loadTop() {
   ...// load more data
-  this.$refs.loadmore.onTopLoaded(id);
+  this.$refs.loadmore.onTopLoaded();
 }
 ```
-At the end of your `top-method`, don't forget to manually execute the `onTopLoaded` event so that `mint-loadmore` removes `topLoadingText`. Note that a parameter called `id` is passed to `loadTop` and `onTopLoaded`. This is because after the top data is loaded, some reposition work is performed inside a `mint-loadmore` instance, and `id` simply tells the component which instance should be repositioned. You don't need to do anything more than passing `id` to `onTopLoaded` just as shown above.
+At the end of your `top-method`, don't forget to manually execute the `onTopLoaded` event so that `mint-loadmore` removes `topLoadingText`. This is because after the top data is loaded, some reposition work is performed inside a `mint-loadmore` instance.
 
 For downward direction, things are similar. To invoke `bottom-method`, just pull the component `bottomDistance` pixels away from the bottom and then release it
 
 ```javascript
-loadBottom(id) {
+loadBottom() {
   ...// load more data
   this.allLoaded = true;// if all data are loaded
-  this.$refs.loadmore.onBottomLoaded(id);
+  this.$refs.loadmore.onBottomLoaded();
 }
 ```
 The only difference is that after all data are fetched, you can set `bottom-all-loaded` to `true` so that `bottom-method` will not run any more.

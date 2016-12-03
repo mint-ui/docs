@@ -71,7 +71,7 @@ export default {
 |------|--------|
 | divider | 对应 slot 是否为分隔符 |
 | content | 分隔符 slot 的显示文本 |
-| values | 对应 slot 的备选值数组 |
+| values | 对应 slot 的备选值数组。若为对象数组，则需在 `mt-picker` 标签上设置 `value-key` 属性来指定显示的字段名 |
 | defaultIndex | 对应 slot 初始选中值，需传入其在 values 数组中的序号，默认为 0 |
 | textAlign | 对应 slot 的对齐方式 |
 | flex | 对应 slot CSS 的 flex 值|
@@ -81,6 +81,7 @@ export default {
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 |------|-------|---------|-------|--------|
 | slots | slot 对象数组 | Array | | [] |
+| valueKey | 当 values 为对象数组时，作为文本显示在 Picker 中的对应字段的字段名 | String | | '' |
 | showToolbar | 是否在组件顶部显示一个 toolbar，内容自定义 | Boolean | | false |
 | visibleItemCount | slot 中可见备选值的个数 | Number | | 5 |
 
