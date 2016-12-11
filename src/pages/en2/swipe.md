@@ -50,6 +50,7 @@ cancel auto-play
 |------|-------|---------|-------|--------|
 | speed | duration of the animation(in millisecond) | Number | | 300 |
 | auto | interval of auto-play(in millisecond) | Number | | 3000 |
+| defaultIndex | index of the initially visible slide | Number | | 0 |
 | continuous | if an infinite slider without endpoints is created | Boolean | | true |
 | showIndicators | visibility of indicators | Boolean | | true |
 | prevent | if `preventDefault` is executed on `touchstart`. Useful for some lower version Android Browsers(4.2 etc.) | Boolean | | false |
