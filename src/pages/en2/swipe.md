@@ -45,6 +45,26 @@ cancel auto-play
 </mt-swipe>
 ```
 
+`change` event
+
+`change` event triggers every time swipe item switches, and the parameter is the index of the entering item
+
+```html
+<mt-swipe @change="handleChange">
+  <mt-swipe-item>1</mt-swipe-item>
+  <mt-swipe-item>2</mt-swipe-item>
+  <mt-swipe-item>3</mt-swipe-item>
+</mt-swipe>
+```
+
+```javascript
+methods: {
+  handleChange(index) {
+    ...
+  }
+}
+```
+
 ## API
 | option | description | type | acceptable values | default |
 |------|-------|---------|-------|--------|

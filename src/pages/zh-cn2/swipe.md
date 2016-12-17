@@ -45,6 +45,26 @@ Vue.component(SwipeItem.name, SwipeItem);
 </mt-swipe>
 ```
 
+`change` 事件
+
+轮播图切换时会触发 `change` 事件，参数为切入轮播图的索引
+
+```html
+<mt-swipe @change="handleChange">
+  <mt-swipe-item>1</mt-swipe-item>
+  <mt-swipe-item>2</mt-swipe-item>
+  <mt-swipe-item>3</mt-swipe-item>
+</mt-swipe>
+```
+
+```javascript
+methods: {
+  handleChange(index) {
+    ...
+  }
+}
+```
+
 ## API
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 |------|-------|---------|-------|--------|
