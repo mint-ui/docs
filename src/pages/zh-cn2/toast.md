@@ -50,6 +50,6 @@ setTimeout(() => {
 |------|-------|---------|-------|--------|
 | message | 文本内容 | String | | |
 | position | Toast 的位置 | String | 'top'<br>'bottom'<br>'middle' | 'middle' |
-| duration | 持续时间（毫秒） | Number | | 3000 |
+| duration | 持续时间（毫秒），若为 -1 则不会自动关闭 | Number | | 3000 |
 | className | Toast 的类名。可以为其添加样式 | String | | |
 | iconClass | icon 图标的类名 | String | |  |

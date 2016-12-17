@@ -50,6 +50,6 @@ setTimeout(() => {
 |------|-------|---------|-------|--------|
 | message | toast text content | String | | |
 | position | location of the toast | String | 'top'<br>'bottom'<br>'middle' | 'middle' |
-| duration | time duration(in millisecond) | Number | | 3000 |
+| duration | time duration(in millisecond). Toast will not close automatically if set to -1 | Number | | 3000 |
 | className | class name of the toast | String | | |
 | iconClass | class name of the icon font | String | |  |
