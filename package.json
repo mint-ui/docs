@@ -30,6 +30,7 @@
     "highlight.js": "^9.4.0",
     "json-templater": "^1.0.4",
     "my-local-ip": "^1.0.0",
+    "postcss-salad": "^1.0.8",
     "sushi-ui": "^0.8.2",
     "vue-markdown-loader": "^0.6.1"
   }

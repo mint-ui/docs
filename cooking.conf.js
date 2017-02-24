@@ -13,7 +13,10 @@ cooking.set({
   hash: true,
   publicPath: '/docs/',
   extractCSS: true,
-  extends: ['vue', 'lint', 'saladcss'],
+  postcss: [
+    require('postcss-salad')
+  ],
+  extends: ['vue', 'lint'],
   alias: {
     'src': path.join(__dirname, 'src')
   },
@@ -22,6 +25,11 @@ cooking.set({
     'vue': 'Vue'
   }: {}
 });
+
+cooking.add('vue.autoprefixer', false);
+cooking.add('vue.postcss', [
+  require('postcss-salad')
+]);
 
 cooking.add('loader.md', {
   test: /\.md$/,
