@@ -65,6 +65,6 @@ this.options = [
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 |------|-------|---------|-------|--------|
 | options | 选择项 | Array | |
-|value | 绑定值 | Array | | |
+|value | 绑定值 | String | | |
 |title | 标题，显示在列表上方 | string | | |
 |align| 单选框对其位置| String | left, right | left |
