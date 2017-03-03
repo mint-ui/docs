@@ -66,7 +66,6 @@ Alignment of the radio
 | option | description | type | acceptable values | default |
 |------|-------|---------|-------|--------|
 | options | array of options(string or object) | Array | |
-|value | array of the selected option | Array | | |
+|value | value of the selected option | String | | |
 |title | title of the list | string | | |
 |align| alignment of the radio | String | left, right | left |
-
