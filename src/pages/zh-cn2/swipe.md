@@ -74,6 +74,7 @@ methods: {
 | continuous | 是否可以循环播放 | Boolean | | true |
 | showIndicators | 是否显示 indicators | Boolean | | true |
 | prevent | 是否在 touchstart 事件触发时阻止事件的默认行为。设为 true 可提高运行在低版本安卓浏览器时的性能 | Boolean | | false |
+| stopPropagation | 是否在  touchstart 事件触发时阻止冒泡。 | Boolean | | false |
 
 ## Slot
 
