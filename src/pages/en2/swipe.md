@@ -74,7 +74,7 @@ methods: {
 | continuous | if an infinite slider without endpoints is created | Boolean | | true |
 | showIndicators | visibility of indicators | Boolean | | true |
 | prevent | if `preventDefault` is executed on `touchstart`. Useful for some lower version Android Browsers(4.2 etc.) | Boolean | | false |
-| stopPropagation | if stopPropagation in touch event is required in swipe component. Note: we only set it in `touchstart` event | Boolean | | false |
+| stopPropagation | if `stopPropagation` is executed on `touchstart`. | Boolean | | false |
 
 ## Slot
 
