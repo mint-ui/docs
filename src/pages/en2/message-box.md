@@ -67,6 +67,7 @@ If the user clicks the cancel button in prompt, the returned Promise will be rej
 | cancelButtonText | text of the cancel button | String | | |
 | cancelButtonHighlight | if the text of the cancel button is highlighted | Boolean | | false |
 | cancelButtonClass | class name of the cancel button | String | | |
+| closeOnClickModal | if message box will close when click on modal | Boolean | true (fasle for alert) | |
 | showInput | if an input is displayed | Boolean | | false |
 | inputType | type of the input | String | | 'text' |
 | inputValue | value of the input | String | | |
