@@ -16,26 +16,26 @@ Vue.component(Field.name, Field);
 
 基础用法
 ```html
-<mt-field label="用户名" placeholder="请输入用户名"></mt-field>
-<mt-field label="邮箱" placeholder="请输入邮箱" type="email"></mt-field>
-<mt-field label="密码" placeholder="请输入密码" type="password"></mt-field>
-<mt-field label="手机号" placeholder="请输入手机号" type="tel"></mt-field>
-<mt-field label="网站" placeholder="请输入网址" type="url"></mt-field>
-<mt-field label="数字" placeholder="请输入数字" type="number"></mt-field>
-<mt-field label="生日" placeholder="请输入生日" type="date"></mt-field>
-<mt-field label="自我介绍" placeholder="自我介绍" type="textarea" rows="4"></mt-field>
+<mt-field label="用户名" placeholder="请输入用户名" v-model="username"></mt-field>
+<mt-field label="邮箱" placeholder="请输入邮箱" type="email" v-model="email"></mt-field>
+<mt-field label="密码" placeholder="请输入密码" type="password" v-model="password"></mt-field>
+<mt-field label="手机号" placeholder="请输入手机号" type="tel" v-model="phone"></mt-field>
+<mt-field label="网站" placeholder="请输入网址" type="url" v-model="website"></mt-field>
+<mt-field label="数字" placeholder="请输入数字" type="number" v-model="number"></mt-field>
+<mt-field label="生日" placeholder="请输入生日" type="date" v-model="birthday"></mt-field>
+<mt-field label="自我介绍" placeholder="自我介绍" type="textarea" rows="4" v-modal="introduction"></mt-field>
 ```
 
 设置校验状态
 ```html
-<mt-field label="邮箱" state="success"></mt-field>
-<mt-field label="邮箱" state="error"></mt-field>
-<mt-field label="邮箱" state="warning"></mt-field>
+<mt-field label="邮箱" state="success" v-model="email"></mt-field>
+<mt-field label="邮箱" state="error" v-model="email"></mt-field>
+<mt-field label="邮箱" state="warning" v-model="email"></mt-field>
 ```
 
 自定义内容（例如添加验证码）
 ```html
-<mt-field label="验证码">
+<mt-field label="验证码" v-model="captcha">
   <img src="../assets/100x100.png" height="45px" width="100px">
 </mt-field>
 ```
@@ -60,4 +60,3 @@ Vue.component(Field.name, Field);
 | name | 描述 |
 |------|--------|
 | - | 显示的 HTML 内容|
-
