@@ -10,7 +10,7 @@
 ```javascript
 import { CellSwipe } from 'mint-ui';
 
-Vue.component(CellSwipe.name, Cell);
+Vue.component(CellSwipe.name, CellSwipe);
 ```
 
 ## Example

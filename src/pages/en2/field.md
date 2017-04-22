@@ -17,28 +17,28 @@ Vue.component(Field.name, Field);
 Basic usage
 
 ```html
-<mt-field label="username" placeholder="Input username"></mt-field>
-<mt-field label="email" placeholder="Input email" type="email"></mt-field>
-<mt-field label="password" placeholder="Input password" type="password"></mt-field>
-<mt-field label="phone" placeholder="Input tel" type="tel"></mt-field>
-<mt-field label="website" placeholder="Input website" type="url"></mt-field>
-<mt-field label="number" placeholder="Input number" type="number"></mt-field>
-<mt-field label="birthday" placeholder="Input birthday" type="date"></mt-field>
-<mt-field label="introduction" placeholder="introduction" type="textarea" rows="4"></mt-field>
+<mt-field label="username" placeholder="Input username" v-model="username"></mt-field>
+<mt-field label="email" placeholder="Input email" type="email" v-model="email"></mt-field>
+<mt-field label="password" placeholder="Input password" type="password" v-modal="password"></mt-field>
+<mt-field label="phone" placeholder="Input tel" type="tel" v-model="phone"></mt-field>
+<mt-field label="website" placeholder="Input website" type="url" v-model="website"></mt-field>
+<mt-field label="number" placeholder="Input number" type="number" v-model="number"></mt-field>
+<mt-field label="birthday" placeholder="Input birthday" type="date" v-model="birthday"></mt-field>
+<mt-field label="introduction" placeholder="introduction" type="textarea" rows="4" v-model="introduction"></mt-field>
 ```
 
 
 Configure validation results
 
 ```html
-<mt-field label="email" state="success"></mt-field>
-<mt-field label="email" state="error"></mt-field>
-<mt-field label="email" state="warning"></mt-field>
+<mt-field label="email" state="success" v-model="email"></mt-field>
+<mt-field label="email" state="error" v-model="email"></mt-field>
+<mt-field label="email" state="warning" v-model="email"></mt-field>
 ```
 
 Custom content
 ```html
-<mt-field label="captcha">
+<mt-field label="captcha" v-model="captcha">
   <img src="../assets/100x100.png" height="45px" width="100px">
 </mt-field>
 ```
@@ -48,7 +48,6 @@ Custom content
 |------|-------|---------|-------|--------|
 | type | type of the input | String | text, number, email, url, tel, date, datetime, password, textarea | text |
 | label| label for the input | String | | |
-| value| value for the input | String | | |
 | rows | rows attribute of textarea | Number | | |
 | placeholder | place holder for the input |String | | |
 | disableClear | disable the clear button | Booean | | false |
