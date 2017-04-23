@@ -1,7 +1,13 @@
+import Vue from 'vue'
 import App from './app';
-import routerStart from './route';
+import router from './route';
 import 'sushi-ui';
 import 'highlight.js/styles/github-gist.css';
 import './assets/style/static.css';
 
-routerStart(App, 'app');
+new Vue({
+  el: '#app',
+  router,
+  template: '<App/>',
+  components: { App }
+});

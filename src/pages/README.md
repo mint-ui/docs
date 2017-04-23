@@ -9,11 +9,11 @@
 </style>
 
 <ul>
-  <li v-for="item in $route.langs">
-    <a
+  <li v-for="item in $route.meta.langs">
+    <router-link
       class="button-language"
-      v-link="{path: '/' + item.value}">
-        {{ item.text + ($route.default_lang.text === item.text ? ' (default)' : '') }}
-      </a>
+      :to="{path: '/' + item.value}">
+        {{ item.text + ($route.meta.default_lang.text === item.text ? ' (default)' : '') }}
+    </router-link>
   </li>
 </ul>

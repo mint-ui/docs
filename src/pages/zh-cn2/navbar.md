@@ -1,6 +1,6 @@
 # Navbar
 
-> 顶部选项卡，与 <a v-link="{path:'/tabbar'}">Tabbar</a> 类似，依赖 tab-item 组件。
+> 顶部选项卡，与 <router-link to="tabbar">Tabbar</router-link> 类似，依赖 tab-item 组件。
 
 ------------
 
@@ -14,7 +14,7 @@ Vue.component(TabItem.name, TabItem);
 ```
 
 ## 例子
-搭配 <a v-link="{path:'/tab-container'}">tab-container</a> 组件使用
+搭配 <router-link to="tab-container">tab-container</router-link> 组件使用
 
 ```html
 <mt-navbar v-model="selected">
@@ -62,4 +62,3 @@ Vue.component(TabItem.name, TabItem);
 |------|--------|
 | - | 显示文字|
 |icon | icon 图标|
-

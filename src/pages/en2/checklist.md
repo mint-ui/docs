@@ -1,6 +1,6 @@
 # Checklist
 
-> Checkbox list, depends on <a v-link="{path:'/' + $route.language + '/cell'}">cell</a>.
+> Checkbox list, depends on <router-link to="cell">cell</a>.
 
 -----------
 

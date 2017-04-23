@@ -6,7 +6,7 @@
       class="col-2 is-scrollable navbar">
       <navbar></navbar>
     </section>
-    <section class="col-6 is-scrollable content" v-el:main @click="navbarShow = false">
+    <section class="col-6 is-scrollable content" ref="main" @click="navbarShow = false">
       <div class="navbar-toggle-container">
         <button class="navbar-toggle" @click="toggleNavbar">
           <span></span>
@@ -29,7 +29,7 @@
   export default {
     watch: {
       '$route.path'() {
-        this.$els.main.scrollTop = 0;
+        this.$refs.main.scrollTop = 0;
         setTimeout(() => {
           this.navbarShow = false;
         }, 200);

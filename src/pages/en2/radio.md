@@ -1,6 +1,6 @@
 # Radio
 
-> Radio list, depends on <a v-link="{path:'/' + $route.language + '/cell'}">cell</a>.
+> Radio list, depends on <router-link to="cell">cell</router-link>.
 
 -------------
 

@@ -1,6 +1,6 @@
 # Radio
 
-> 单选框列表，依赖 <a v-link="{path:'/cell'}">cell</a> 组件。
+> 单选框列表，依赖 <router-link to="cell">cell</router-link> 组件。
 
 -------------
 
