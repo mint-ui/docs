@@ -1,6 +1,6 @@
 # Navbar
 
-> A top navigation panel, similar to <a v-link="{path:'/tabbar'}">Tabbar</a>. Dependent on tab-item.
+> A top navigation panel, similar to <router-link to="tabbar">Tabbar</router-link>. Dependent on tab-item.
 
 ------------
 
@@ -14,7 +14,7 @@ Vue.component(TabItem.name, TabItem);
 ```
 
 ## Example
-Works with <a v-link="{path:'/tab-container'}">tab-container</a>
+Works with <router-link to="tab-container">tab-container</router-link>
 
 ```html
 <mt-navbar v-model="selected">
@@ -62,4 +62,3 @@ Works with <a v-link="{path:'/tab-container'}">tab-container</a>
 |------|--------|
 | - | displayed text |
 |icon | icon |
-

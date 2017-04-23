@@ -58,7 +58,7 @@ npm i mint-ui -S
 <iframe width="100%" height="300" src="//jsfiddle.net/cinwell_li/Lr75y28t/1/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 
-如果是通过 npm 安装，并希望配合 webpack 使用，请阅读下一节：<a v-link="'/zh-cn2/quickstart'">快速上手</a>。
+如果是通过 npm 安装，并希望配合 webpack 使用，请阅读下一节：<router-link to="/zh-cn2/quickstart">快速上手</a>。
 
 <br>
 

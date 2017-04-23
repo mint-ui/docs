@@ -1,6 +1,6 @@
 # Checklist
 
-> 复选框列表，依赖 <a v-link="{path:'/' + $route.language + '/cell'}">cell</a> 组件。
+> 复选框列表，依赖 <router-link to="cell">cell</a> 组件。
 
 -------------
 

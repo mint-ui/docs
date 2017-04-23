@@ -1,19 +1,18 @@
-import LANG_CONFIG from './langs.json';
-import VueRouter from 'vue-router';
 import Vue from 'vue';
+import VueRouter from 'vue-router';
+import LANG_CONFIG from './langs.json';
 
 Vue.use(VueRouter);
 
-const router = new VueRouter();
-
 let defaultLang = {};
+
 LANG_CONFIG.langs.forEach(item => {
   if (item.value === LANG_CONFIG.default) {
     defaultLang = item;
   }
 });
 
-router.map({
+const route = {
   '/': {
     component: resolve => require(['./pages/README.md'], resolve),
     default_lang: defaultLang,
@@ -650,17 +649,30 @@ router.map({
     language: 'en',
     component: resolve => require(['./pages/en/badge.md'], resolve)
   }
-});
-
-router.redirect({
-  '*': '/'
-});
-
-router.beforeEach(transition => {
-  document.title = transition.to.title || document.title;
-  transition.next();
-});
-
-export default function(Component, element) {
-  router.start(Component, element);
 };
+
+const router = new VueRouter({
+  routes: formatRoute(route)
+});
+
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title || document.title;
+  next();
+});
+
+function formatRoute(route) {
+  return Object.keys(route).map((path) => {
+    const { language, title, component } = route[path]
+
+    return {
+      name: path,
+      component,
+      path,
+      meta: Object.assign({}, route[path], {
+        language: language || defaultLang.value,
+      })
+    }
+  })
+}
+
+export default router;

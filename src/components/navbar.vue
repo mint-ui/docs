@@ -2,19 +2,28 @@
   <nav class="nav">
     <ul>
       <li>
-        <a
-          class="nav-link"
-          v-link="{ path: '/' + ($route.language || $route.default_lang.value), activeClass: 'is-active', exact: true }">Overview</a>
+        <a class="nav-link edit-doc-btn" href="https://github.com/mint-ui/docs" target="_blank">
+          {{ isZH ? '参与文档编辑' : 'Edit Documentation' }}
+        </a>
       </li>
       <li>
-        <a
+        <router-link
           class="nav-link"
-          v-link="{ path: '/' + ($route.language || $route.default_lang.value) + '/quickstart', activeClass: 'is-active', exact: true }">Quickstart</a>
+          active-class="is-active"
+          exact
+          :to="{ path: '/' + $route.meta.language }">Overview</router-link>
       </li>
       <li>
-        <a
+        <router-link
           class="nav-link"
-          v-link="{ path: '/' + ($route.language || $route.default_lang.value) + '/repositories', activeClass: 'is-active', exact: true }">Repositories</a>
+          :to="{ path: '/' + $route.meta.language + '/quickstart' }">Quickstart</router-link>
+      </li>
+      <li>
+        <router-link
+          class="nav-link"
+          active-class="is-active"
+          exact
+          :to="{ path: '/' + $route.meta.language + '/repositories' }">Repositories</router-link>
       </li>
 
       <template v-for="group in navs">
@@ -30,14 +39,12 @@
             maxHeight: group.list.length * 36 + 'px'
           }">
           <li v-for="item in group.list">
-            <a
+            <router-link
               class="nav-link"
-              v-link="{
-                path: '/' + ($route.language || $route.default_lang.value) + item.path,
-                activeClass: 'is-active'
-              }"
+              :to="{ path: '/' + $route.meta.language + item.path }"
+              active-class="is-active"
               v-text="item.name">
-            </a>
+            </router-link>
           </li>
         </ul>
       </template>
@@ -56,13 +63,18 @@
   export default {
     data() {
       return {
-        navs: NavsConfig
+        navs: NavsConfig,
+        isZH: /zh/.test(navigator.language)
       };
     }
   };
 </script>
 
 <style lang="css" scoped>
+  .edit-doc-btn {
+    color: red !important;
+  }
+
   .slidedown-transition {
     transition: all .3s ease-in-out;
     overflow: hidden;

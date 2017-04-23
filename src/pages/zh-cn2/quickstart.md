@@ -4,135 +4,12 @@
 
 -----------
 
-## 使用 Starter Kit
+## 使用 vue-cli
 
-我们提供了通用的[项目模板](https://github.com/mint-ui/mint-ui-starter)，你可以直接使用。如果不希望使用我们提供的模板，请继续阅读。
+```bash
+npm install -g vue-cli
 
-## 配置文件
-
-新建项目，项目结构为
-```text
-|- src/  --------------------- 项目源代码
-    |- App.vue
-    |- main.js  -------------- 入口文件
-|- .babelrc  ----------------- babel 配置文件
-|- index.html  --------------- HTML 模板
-|- package.json  ------------- npm 配置文件
-|- README.md  ---------------- 项目帮助文档
-|- webpack.config.json  ------ webpack 配置文件
-```
-
-几个配置文件的典型配置如下：
-
-**.babelrc**
-```json
-{
-  "presets": [
-    ["es2015", { "modules": false }]
-  ]
-}
-```
-
-<br>
-
-**package.json**
-```json
-{
-  "name": "my-project",
-  "description": "A Vue.js and Mint UI project",
-  "private": true,
-  "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --port 8087",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
-  },
-  "dependencies": {
-    "mint-ui": "^2.0.4",
-    "vue": "^2.0.3"
-  },
-  "devDependencies": {
-    "babel-core": "^6.0.0",
-    "babel-loader": "^6.0.0",
-    "babel-preset-es2015": "^6.13.2",
-    "cross-env": "^1.0.6",
-    "css-loader": "^0.23.1",
-    "file-loader": "^0.8.5",
-    "style-loader": "^0.13.1",
-    "vue-loader": "^9.5.1",
-    "webpack": "2.1.0-beta.22",
-    "webpack-dev-server": "^2.1.0-beta.0"
-  }
-}
-```
-
-<br>
-
-**webpack.config.js**
-```javascript
-var path = require('path')
-var webpack = require('webpack')
-
-module.exports = {
-  entry: './src/main.js',
-  output: {
-    path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
-    filename: 'build.js'
-  },
-  resolveLoader: {
-    root: path.join(__dirname, 'node_modules')
-  },
-  module: {
-    loaders: [
-      {
-        test: /\.vue$/,
-        loader: 'vue'
-      },
-      {
-        test: /\.js$/,
-        loader: 'babel',
-        exclude: /node_modules/
-      },
-      {
-        test: /\.css$/,
-        loader: 'style!css'
-      },
-      {
-        test: /\.(eot|svg|ttf|woff|woff2)$/,
-        loader: 'file'
-      },
-      {
-        test: /\.(png|jpg|gif|svg)$/,
-        loader: 'file',
-        query: {
-          name: '[name].[ext]?[hash]'
-        }
-      }
-    ]
-  },
-  devServer: {
-    historyApiFallback: true,
-    noInfo: true
-  },
-  devtool: '#eval-source-map'
-}
-
-if (process.env.NODE_ENV === 'production') {
-  module.exports.devtool = '#source-map'
-  // http://vue-loader.vuejs.org/en/workflow/production.html
-  module.exports.plugins = (module.exports.plugins || []).concat([
-    new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: '"production"'
-      }
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false
-      }
-    })
-  ])
-}
-
+vue init webpack projectname
 ```
 
 ## 引入 Mint UI
@@ -152,7 +29,7 @@ Vue.use(MintUI)
 
 new Vue({
   el: '#app',
-  render: h => h(App)
+  components: { App }
 })
 ```
 以上代码便完成了 Mint UI 的引入。需要注意的是，样式文件需要单独引入。
@@ -198,7 +75,7 @@ Vue.component(Cell.name, Cell)
 
 new Vue({
   el: '#app',
-  render: h => h(App)
+  components: { App }
 })
 ```
 
@@ -207,7 +84,6 @@ new Vue({
 至此，一个基于 Vue 和 Mint UI 的开发环境已经搭建完毕，现在就可以编写代码了。启动开发模式：
 
 ```bash
-# 执行如下命令后访问 localhost:8087
 npm run dev
 ```
 
