@@ -57,7 +57,7 @@ Vue.component(PaletteButton.name, PaletteButton);
 |radius| 按钮展开半径 | Number | | 90 |
 |mainButtonStyle| 主按钮样式| String |  |  |
 
-![一图胜千言](/static/palette-button.png)
+![一图胜千言](/docs/static/palette-button.png)
 
 ## 方法
 | 方法名 | 说明 |
