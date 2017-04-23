@@ -24,7 +24,7 @@ Works with <router-link to="tab-container">tab-container</router-link>
 </mt-navbar>
 
 <!-- tab-container -->
-<mt-tab-container :active.sync="selected">
+<mt-tab-container v-model="selected">
   <mt-tab-container-item id="1">
     <mt-cell v-for="n in 10" :title="'content ' + n" />
   </mt-tab-container-item>

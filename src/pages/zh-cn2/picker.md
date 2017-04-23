@@ -84,6 +84,7 @@ export default {
 | valueKey | 当 values 为对象数组时，作为文本显示在 Picker 中的对应字段的字段名 | String | | '' |
 | showToolbar | 是否在组件顶部显示一个 toolbar，内容自定义 | Boolean | | false |
 | visibleItemCount | slot 中可见备选值的个数 | Number | | 5 |
+| itemHeight | 每个 slot 的高度 | Number | | 36 |
 
 ## Slot
 | name | 描述 |

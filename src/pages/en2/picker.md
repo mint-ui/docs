@@ -84,6 +84,7 @@ The `slots` array is made up of objects. Each object represents a slot
 | valueKey | when `values` is an object array, `valueKey` tells Picker which key is for text display | String | | '' |
 | showToolbar | if a toolbar is shown above the slots. Its content can be customized | Boolean | | false |
 | visibleItemCount | the amount of visible values in each slot | Number | | 5 |
+| itemHeight | height of each slot. | Number | | 36 |
 
 ## Slot
 | name | description |
