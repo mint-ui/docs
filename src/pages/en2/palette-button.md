@@ -54,7 +54,7 @@ set option, event and trigger event menually
 |radius| the radius of the fan-shaped area | Number | | 90 |
 |mainButtonStyle| set the style of the main button | String |  |  |
 
-![One picture worth thousands of word](/static/palette-button.png)
+![One picture worth thousands of word](/docs/static/palette-button.png)
 
 ## Method
 | Method | Desc. |
