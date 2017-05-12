@@ -23,7 +23,7 @@ Vue.component(Field.name, Field);
 <mt-field label="网站" placeholder="请输入网址" type="url" v-model="website"></mt-field>
 <mt-field label="数字" placeholder="请输入数字" type="number" v-model="number"></mt-field>
 <mt-field label="生日" placeholder="请输入生日" type="date" v-model="birthday"></mt-field>
-<mt-field label="自我介绍" placeholder="自我介绍" type="textarea" rows="4" v-modal="introduction"></mt-field>
+<mt-field label="自我介绍" placeholder="自我介绍" type="textarea" rows="4" v-model="introduction"></mt-field>
 ```
 
 设置校验状态
