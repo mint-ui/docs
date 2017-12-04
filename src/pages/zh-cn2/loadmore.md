@@ -50,7 +50,7 @@ loadBottom() {
 可以为列表顶部和底部的加载提示区域提供自定义的 HTML 模板
 ```html
 <template>
-  <mt-loadmore :top-method="loadTop" @top-status-change="handleTopChange">
+  <mt-loadmore :top-method="loadTop" ref="loadmore" @top-status-change="handleTopChange">
     <ul>
       <li v-for="item in list">{{ item }}</li>
     </ul>
