@@ -80,8 +80,10 @@ Vue.component(DatetimePicker.name, DatetimePicker);
 | dateFormat | 日期模板 | String | | '{value}' |
 | hourFormat | 小时模板 | String | | '{value}' |
 | minuteFormat | 分钟模板 | String | | '{value}' |
+| closeOnClickModal | 是否可以通过点击 modal 层来关闭 popup | Boolean | | true |
 
 ## Events
 | 事件名称 | 说明 | 回调参数 |
 |------|-------|---------|
 | confirm | 点击确认按钮时的回调函数 | 目前的选择值 |
+| changeVisible | 改变弹窗显示隐藏的回调函数 | 弹窗是否可见 |
