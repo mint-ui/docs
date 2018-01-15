@@ -80,8 +80,9 @@ When the confirm button is tapped, the `confirm` event triggers with `value` as 
 | dateFormat | custom template for date | String | | '{value}' |
 | hourFormat | custom template for hour | String | | '{value}' |
 | minuteFormat | custom template for minute | String | | '{value}' |
-
+| closeOnClickModal | if the popup turns off when the modal is clicked | Boolean | | true |
 ## Events
 | event name | description | parameters |
 |------|-------|---------|
 | confirm | callback when the confirm button is clicked | current value of the picker |
+| changeVisible | callback when pop open or close | current value of pop visible |
