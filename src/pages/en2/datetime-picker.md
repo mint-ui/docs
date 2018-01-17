@@ -28,7 +28,7 @@ The `type` attribute configures the type of the component, and it has three opti
   <mt-datetime-picker
     ref="picker"
     type="time"
-    v-model="pickerValue">
+    v-model="value">
   </mt-datetime-picker>
 </template>
 
@@ -47,7 +47,7 @@ You can configure a custom template for slot options. The template should be a s
 
 ```html
 <mt-datetime-picker
-  v-model="pickerVisible"
+  v-model="value"
   type="date"
   year-format="{value} 年"
   month-format="{value} 月"
@@ -59,7 +59,7 @@ When the confirm button is tapped, the `confirm` event triggers with `value` as 
 
 ```html
 <mt-datetime-picker
-  v-model="pickerVisible"
+  v-model="value"
   type="time"
   @confirm="handleConfirm">
 </mt-datetime-picker>
@@ -68,6 +68,7 @@ When the confirm button is tapped, the `confirm` event triggers with `value` as 
 ## API
 | option | description | type | acceptable values | default |
 |------|-------|---------|-------|--------|
+| value | value of the picker | Date / String (for example: 2018-1-1 00:00:00 , 2018/1/1 00:00:00 or 2018.1.1 00:00:00))| | |
 | type | type of the picker | String | 'datetime', 'date', 'time' | 'datetime' |
 | cancelText | text of the cancel button | String | | '取消' |
 | confirmText | text of the confirm button | String | | '确定' |
@@ -84,5 +85,5 @@ When the confirm button is tapped, the `confirm` event triggers with `value` as 
 ## Events
 | event name | description | parameters |
 |------|-------|---------|
-| confirm | callback when the confirm button is clicked | current value of the picker |
+| confirm | callback when the confirm button is clicked | current value of the picker (is type of Date)|
 | changeVisible | callback when pop open or close | current value of pop visible |
