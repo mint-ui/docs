@@ -32,7 +32,7 @@ Toast({
 ```javascript
 Toast({
   message: '操作成功',
-  iconClass: 'icon icon-success'
+  iconClass: 'mintui mintui-success'
 });
 ```
 

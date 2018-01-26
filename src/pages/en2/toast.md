@@ -32,7 +32,7 @@ If you need to put an icon font above the text, just add another key named `icon
 ```javascript
 Toast({
   message: 'operation success',
-  iconClass: 'icon icon-success'
+  iconClass: 'mintui mintui-success'
 });
 ```
 
