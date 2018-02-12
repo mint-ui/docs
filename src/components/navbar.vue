@@ -16,6 +16,7 @@
       <li>
         <router-link
           class="nav-link"
+          active-class="is-active"
           :to="{ path: '/' + $route.meta.language + '/quickstart' }">Quickstart</router-link>
       </li>
       <li>
