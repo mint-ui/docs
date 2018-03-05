@@ -28,7 +28,7 @@ Vue.component(DatetimePicker.name, DatetimePicker);
   <mt-datetime-picker
     ref="picker"
     type="time"
-    v-model="pickerValue">
+    v-model="value">
   </mt-datetime-picker>
 </template>
 
@@ -47,7 +47,7 @@ Vue.component(DatetimePicker.name, DatetimePicker);
 
 ```html
 <mt-datetime-picker
-  v-model="pickerVisible"
+  v-model="value"
   type="date"
   year-format="{value} 年"
   month-format="{value} 月"
@@ -59,7 +59,7 @@ Vue.component(DatetimePicker.name, DatetimePicker);
 
 ```html
 <mt-datetime-picker
-  v-model="pickerVisible"
+  v-model="value"
   type="time"
   @confirm="handleConfirm">
 </mt-datetime-picker>
@@ -68,6 +68,7 @@ Vue.component(DatetimePicker.name, DatetimePicker);
 ## API
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 |------|-------|---------|-------|--------|
+| value | 绑定值 | Date / String(如：2018-1-1 00:00:00 , 2018/1/1 00:00:00 或者 2018.1.1 00:00:00) | | |
 | type | 组件的类型 | String | 'datetime', 'date', 'time' | 'datetime' |
 | cancelText | 取消按钮文本 | String | | '取消' |
 | confirmText | 确定按钮文本 | String | | '确定' |
@@ -85,5 +86,5 @@ Vue.component(DatetimePicker.name, DatetimePicker);
 ## Events
 | 事件名称 | 说明 | 回调参数 |
 |------|-------|---------|
-| confirm | 点击确认按钮时的回调函数 | 目前的选择值 |
+| confirm | 点击确认按钮时的回调函数 | 目前的选择值(为Date类型) |
 | changeVisible | 改变弹窗显示隐藏的回调函数 | 弹窗是否可见 |
