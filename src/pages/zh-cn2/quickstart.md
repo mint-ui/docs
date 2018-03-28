@@ -68,10 +68,6 @@ import App from './App.vue'
 
 Vue.component(Button.name, Button)
 Vue.component(Cell.name, Cell)
-/* 或写为
- * Vue.use(Button)
- * Vue.use(Cell)
- */
 
 new Vue({
   el: '#app',
