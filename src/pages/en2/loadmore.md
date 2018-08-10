@@ -94,6 +94,7 @@ Upon loaded, `loadmore` will automatically check if it is tall enough to fill it
 |------|-------|---------|
 | top-status-change | the callback when the component's top status changes | current top status |
 | bottom-status-change | the callback when the component's bottom status changes | current bottom status |
+| translate-change | the callback when the component's top or bottom pull distance changes | current pull distance |
 
 ## Slot
 | name | description |
