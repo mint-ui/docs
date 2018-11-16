@@ -52,12 +52,11 @@ Then edit .babelrc:
   "presets": [
     ["es2015", { "modules": false }]
   ],
-  "plugins": [["component", [
-    {
+  "plugins": [["component", {
       "libraryName": "mint-ui",
       "style": true
     }
-  ]]]
+  ]]
 }
 ```
 
